@@ -1,0 +1,24 @@
+header {
+  height: 70px;
+  color: var(--white-100);
+  padding-left: 200px;
+  background-color: var(--white-12);
+  border-bottom: solid var(--white-50) 1px;
+
+  .icon {
+    font-size: 36px;
+  }
+
+  li {
+    width: 100px;
+    text-align: center;
+    // color: blue;
+    font-family: gt planar;
+    font-size: 14px;
+  }
+  .contact {
+    margin-right: 200px;
+    font-family: gt planar;
+    font-size: 14px;
+  }
+}
