@@ -1,4 +1,5 @@
 import styles from "./Header.module.scss";
+import { Link } from "react-router-dom";
 // import logo from "../assets/images/logo.jpg";
 
 function Header() {
@@ -7,13 +8,17 @@ function Header() {
       <div className="d-flex flex-fill ">
         <span className={`${styles.icon} d-flex align-items-center`}>gg.</span>
         <ul className="d-flex align-items-center">
-          <li>Projets</li>
-          <li>À propos</li>
+          <li>
+            <Link to="/">Projets</Link>
+          </li>
+          <li>
+            <Link to="/a-propos">À propos</Link>
+          </li>
         </ul>
       </div>
 
       <span className={`${styles.contact} d-flex align-items-center`}>
-        Contact
+        <Link to="/contact">Contact</Link>
       </span>
     </header>
   );
