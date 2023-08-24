@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom/client';
 import '../src/assets/styles/index.scss';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Projet from './components/pages/Projets';
+import ProjetsList from './pages/ProjetsList';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 
-    <Projet />
+    <ProjetsList />
     
   </React.StrictMode>
 );
