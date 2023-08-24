@@ -8,11 +8,13 @@ function Header() {
         <span className={`${styles.icon} d-flex align-items-center`}>gg.</span>
         <ul className="d-flex align-items-center">
           <li>Projets</li>
-          <li>A propos</li>
+          <li>À propos</li>
         </ul>
       </div>
 
-      <span className={`${styles.contact} d-flex align-items-center`}>Contact</span>
+      <span className={`${styles.contact} d-flex align-items-center`}>
+        Contact
+      </span>
     </header>
   );
 }

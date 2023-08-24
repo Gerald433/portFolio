@@ -1,24 +1,33 @@
 header {
   height: 70px;
-  color: var(--white-100);
+  color: var(--white-50);
   padding-left: 200px;
   background-color: var(--white-12);
   border-bottom: solid var(--white-50) 1px;
 
   .icon {
     font-size: 36px;
+    color: var(--white-100);
   }
 
   li {
     width: 100px;
     text-align: center;
-    // color: blue;
     font-family: gt planar;
     font-size: 14px;
+    &:hover {
+      cursor: pointer;
+      color: var(--white-100);
+    }
   }
   .contact {
     margin-right: 200px;
     font-family: gt planar;
     font-size: 14px;
+    // color: var(--white-50);
+    &:hover {
+      cursor: pointer;
+      color: var(--white-100);
+    }
   }
 }
