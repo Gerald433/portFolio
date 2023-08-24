@@ -1,0 +1,42 @@
+footer {
+  height: 605px;
+  background-color: var(--white-0);
+  color: var(--white-100);
+  position: relative;
+  .icon {
+    font-size: 48px;
+    padding-left: 200px;
+    padding-top: 100px;
+    display: block;
+    width: 60px;
+  }
+
+  .connections {
+    // border: 3px solid red;
+    width: 380px;
+    flex-wrap: wrap;
+    height: 240px;
+    margin-left: 400px;
+    margin-top: -50px;
+    line-height: 50px;
+    font-family: gt planar;
+    font-size: 22px;
+    li {
+      display: block;
+      width: 150px;
+      cursor: pointer;
+    }
+  }
+
+  .containerLinkFoot {
+    position: absolute;
+    top: 120px;
+    left: 950px;
+    gap: 15px;
+  }
+
+  .copyrigth{
+    text-align: center;
+    padding-top: 200px;
+  }
+}
