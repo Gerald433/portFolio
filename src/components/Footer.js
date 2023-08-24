@@ -10,20 +10,31 @@ function Footer() {
       <span className={`${styles.icon}`}>gg.</span>
       <ul className={`${styles.connections} d-flex flex-column`}>
         <li>Réseaux</li>
-        <li>Github</li>
-        <li>Linkedin</li>
+        <li>
+          <a href={"https://github.com/Gerald433"}>Github</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/g%C3%A9rald-gaillard-218664277/">
+            Linkedin
+          </a>
+        </li>
         <li>CV</li>
         <li>Contact</li>
         <li>Message</li>
       </ul>
 
       <div className={`${styles.containerLinkFoot} d-flex`}>
-        <LinkFooter src={linkLinkedin} />
-        <LinkFooter src={linkGithub} />
+        <LinkFooter
+          src={linkLinkedin}
+          href={"https://www.linkedin.com/in/g%C3%A9rald-gaillard-218664277/"}
+        />
+        <LinkFooter src={linkGithub} href={"https://github.com/Gerald433"} />
         <LinkFooter src={linkLetter} />
       </div>
 
-      <p className={`${styles.copyrigth}`}>Port-Folio Gérald Gaillard</p>
+      <p className={`${styles.copyrigth}`}>
+        -Port Folio Développeur Web Gérald Gaillard-
+      </p>
     </footer>
   );
 }
