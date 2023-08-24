@@ -5,7 +5,7 @@
 }
 
 @mixin sm {
-  @media (max-width: 577px) and (max-width: 768px) {
+  @media (min-width: 577px) and (max-width: 768px) {
     @content;
   }
 }
@@ -17,7 +17,7 @@
 }
 
 @mixin md {
-  @media (max-width: 769px) and (max-width: 992px) {
+  @media (min-width: 769px) and (max-width: 992px) {
     @content;
   }
 }
@@ -29,7 +29,7 @@
 }
 
 @mixin lg {
-  @media (max-width: 993px) and (max-width: 1200px) {
+  @media (min-width: 993px) and (max-width: 1200px) {
     @content;
   }
 }
@@ -41,7 +41,7 @@
 }
 
 @mixin xl {
-  @media (max-width: 1201px) {
+  @media (min-width: 1201px) {
     @content;
   }
 }
