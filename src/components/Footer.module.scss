@@ -1,48 +1,61 @@
-footer {
+.footer {
   height: 605px;
   background-color: var(--white-0);
   color: var(--white-100);
-  position: relative;
-  .icon {
-    font-size: 48px;
-    padding-left: 200px;
-    padding-top: 100px;
-    display: block;
-    width: 60px;
+  padding: 100px 0 100px 0;
+
+  .titleLink {
+    color: red;
+    font-family: gt planar;
+    font-size: 22px;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    line-height: 50px;
+    font-family: gt planar;
+    font-size: 22px;
+  }
+  .container {
+    // position: relative;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
   }
 
+  .icon {
+    font-size: 48px;
+  }
 
   .connections {
     // border: 3px solid red;
     width: 380px;
     flex-wrap: wrap;
     height: 240px;
-    margin-left: 400px;
-    margin-top: -50px;
+    // margin-left: 400px;
+    // margin-top: -50px;
     line-height: 50px;
     font-family: gt planar;
     font-size: 22px;
     li {
       display: block;
       width: 150px;
-      
-      a{
-        text-decoration: none;
-        color: white;
-      }
+
     }
   }
 
   .containerLinkFoot {
-    position: absolute;
-    top: 120px;
-    left: 950px;
+    // position: absolute;
+    padding-top: 0px;
     gap: 15px;
   }
 
   .copyrigth {
-    text-align: center;
-    padding-top: 200px;
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+    padding: 0 50px;
     font-family: gt planar;
   }
 }
