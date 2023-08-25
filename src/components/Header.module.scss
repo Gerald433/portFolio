@@ -1,7 +1,9 @@
-header {
-  height: 70px;
+@use "../assets/styles/mixins" as mixin;
+
+.header {
   color: var(--white-50);
-  padding-left: 200px;
+  height: 70px;
+
   background-color: var(--white-12);
   border-bottom: solid var(--white-50) 1px;
 
@@ -11,24 +13,55 @@ header {
   }
 
   li {
-    width: 100px;
+    min-width: 100px;
     text-align: center;
     font-family: gt planar;
     font-size: 14px;
-    &:hover {
-      cursor: pointer;
-      color: var(--white-100);
+    @include mixin.sm-lt {
+      display: none;
+      width: 0;
+    }
+    a {
+      color: var(--white-50);
+      text-decoration: none;
+      &:hover {
+        color: var(--white-100);
+      }
     }
   }
-  
-  .contact {
-    margin-right: 200px;
-    font-family: gt planar;
-    font-size: 14px;
-    // color: var(--white-50);
-    &:hover {
+  .contactBox {
+    min-width: 16px;
+    
+
+
+
+    @include mixin.sm-lt {
+      border-top: var(--white-100) 1px solid;
+      border-bottom: var(--white-100) 1px solid;
+      width: 16px;
+      height: 9px;
+      color: transparent;
       cursor: pointer;
-      color: var(--white-100);
+    }
+
+    .contact {
+      min-height: 50px;
+
+      font-family: gt planar;
+      font-size: 14px;
+      color: var(--white-50);
+
+      a {
+        color: var(--white-50);
+        width: 50px;
+        text-decoration: none;
+        &:hover {
+          color: var(--white-100);
+        }
+        @include mixin.sm-lt {
+          display: none;
+        }
+      }
     }
   }
 }
