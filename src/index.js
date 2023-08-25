@@ -16,13 +16,16 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Header />
-    <Routes>
-      <Route path="/" element={<ProjetsList />} />
-      <Route path="/projets/:projetId" element={<Projet />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/a-propos" element={<Apropos />} />
-      <Route path="*" element={<Error />} />
-    </Routes>
+    <main className="flex-fill container">
+      <Routes>
+        <Route path="/" element={<ProjetsList />} />
+        <Route path="/projets/:projetId" element={<Projet />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/a-propos" element={<Apropos />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+    </main>
+
     <Footer />
   </BrowserRouter>
 );
