@@ -37,8 +37,6 @@ function Footer() {
           </ul>
         </div>
 
-        
-
         <div className={`${styles.containerLinkFoot} d-flex`}>
           <LinkFooter
             src={linkLinkedin}
@@ -49,7 +47,7 @@ function Footer() {
         </div>
       </div>
       <p className={`${styles.copyrigth}`}>
-        -Port Folio Développeur Web Gérald Gaillard-
+        Port Folio Développeur Web Gérald Gaillard
       </p>
     </footer>
   );
