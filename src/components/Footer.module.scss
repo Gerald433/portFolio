@@ -1,8 +1,7 @@
 @use "../assets/styles/mixins" as mixin;
 
-
 .footer {
-  height: 605px;
+  min-height: 605px;
   background-color: var(--white-0);
   color: var(--white-100);
   padding: 100px 0 100px 0;
@@ -11,6 +10,9 @@
     color: red;
     font-family: gt planar;
     font-size: 22px;
+    @include mixin.xs {
+      font-size: 20px;
+    }
   }
   a {
     text-decoration: none;
@@ -26,17 +28,15 @@
     flex-wrap: nowrap;
     width: 100%;
 
-    .linkText{
-      gap: 50px;
-      padding-right: 200px;
+    .linkText {
+      gap: 150px;
+      padding-right: 100px;
       @include mixin.md-lt {
         padding-right: 50px;
-        
+        gap: 50px;
       }
       @include mixin.xs {
         flex-direction: column;
-        
-        
       }
     }
   }
@@ -58,12 +58,12 @@
     li {
       display: block;
       width: 150px;
-
     }
   }
 
   .containerLinkFoot {
     // position: absolute;
+
     padding-top: 0px;
     gap: 15px;
     @include mixin.md-lt {
@@ -71,12 +71,22 @@
     }
     
   }
+  .containerLinkFoot img,
+  a {
+    width: 40px;
+    height: 40px;
+    @include mixin.xs {
+      width: 20px;
+
+    }
+  }
 
   .copyrigth {
+    font-size: 20px;
     max-width: 1440px;
     width: 100%;
     margin: auto;
-    padding: 0 50px;
+    padding: 200px 0px 0px 50px;
     font-family: gt planar;
   }
 }

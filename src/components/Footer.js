@@ -4,13 +4,14 @@ import LinkFooter from "./LinkFooter";
 import linkLinkedin from "../assets/images/linkLinkedin.svg";
 import linkGithub from "../assets/images/linkGithub.svg";
 import { Link } from "react-router-dom";
+import cv from "../assets/images/CV.pdf";
 
 function Footer() {
   return (
     <footer className={`${styles.footer}`}>
       <div className={`${styles.container} container d-flex`}>
-        <span className={`${styles.icon}`}>gg.</span>
-        <div className={`${styles.linkText} d-flex `}>
+        <div className={`${styles.linkText} d-flex`}>
+          <span className={`${styles.icon}`}>gg.</span>
           <div>
             <ul>
               <p className={`${styles.titleLink}`}>Réseaux</p>
@@ -23,7 +24,9 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="#">CV</Link>
+                <Link to={cv} target="_blank" rel="noopener noreferrer">
+                  CV
+                </Link>
               </li>
             </ul>
           </div>
@@ -32,7 +35,7 @@ function Footer() {
             <ul>
               <p className={`${styles.titleLink}`}>Contact</p>
               <li>
-                <Link to="#">Message</Link>
+                <Link to="/contact">Message</Link>
               </li>
             </ul>
           </div>
@@ -44,12 +47,10 @@ function Footer() {
             href={"https://www.linkedin.com/in/g%C3%A9rald-gaillard-218664277/"}
           />
           <LinkFooter src={linkGithub} href={"https://github.com/Gerald433"} />
-          <LinkFooter src={linkLetter} />
+          <LinkFooter src={linkLetter} href={"/contact"} />
         </div>
       </div>
-      <p className={`${styles.copyrigth}`}>
-        Port Folio Développeur Web Gérald Gaillard
-      </p>
+      <p className={`${styles.copyrigth} `}>Port Folio Gérald G.</p>
     </footer>
   );
 }
