@@ -4,7 +4,7 @@
 
 body {
   margin: auto;
-  font-family: "acorn", sans-serif;
+  font-family: "Acorn Medium", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -23,7 +23,7 @@ ul {
 }
 
 #root {
-  width: 100%;
+  // width: 100%;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
