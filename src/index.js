@@ -26,7 +26,7 @@ root.render(
       </Routes>
     </main>
 
-    <Footer />
+    {/* <Footer /> */}
   </BrowserRouter>
 );
 
