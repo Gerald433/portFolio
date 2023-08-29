@@ -1,4 +1,4 @@
-
+@use "../assets/styles/mixins" as mixin;
 
 
 .link{
@@ -7,5 +7,8 @@
     background-color: white;
     border-radius: 50%;
     padding: 0;
-    
+    @include mixin.xs {
+      width: 47px;
+      height: 47px;
+    }
   }
