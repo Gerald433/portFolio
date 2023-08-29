@@ -1,3 +1,6 @@
+@use "../assets/styles/mixins" as mixin;
+
+
 .footer {
   height: 605px;
   background-color: var(--white-0);
@@ -20,8 +23,22 @@
     // position: relative;
     justify-content: space-between;
     align-items: flex-start;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     width: 100%;
+
+    .linkText{
+      gap: 50px;
+      padding-right: 200px;
+      @include mixin.md-lt {
+        padding-right: 50px;
+        
+      }
+      @include mixin.xs {
+        flex-direction: column;
+        
+        
+      }
+    }
   }
 
   .icon {
@@ -49,6 +66,10 @@
     // position: absolute;
     padding-top: 0px;
     gap: 15px;
+    @include mixin.md-lt {
+      flex-direction: column;
+    }
+    
   }
 
   .copyrigth {
