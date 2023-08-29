@@ -3,65 +3,102 @@
 .header {
   color: var(--white-50);
   height: 70px;
-
   background-color: var(--white-12);
   border-bottom: solid var(--white-50) 1px;
+
+  .container {
+    position: relative;
+  }
+
+  .chevronHeader {
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--white-50);
+    border-radius: 3px;
+    margin-left: 5px;
+    color: inherit;
+    align-items: center;
+    padding: 3px;
+  }
 
   .icon {
     font-size: 36px;
     color: var(--white-100);
   }
 
-  li {
-    min-width: 100px;
+  .nav li,
+  .contact {
+    height: 30px;
+    padding-left: 20px;
     text-align: center;
     font-family: gt planar;
-    font-size: 14px;
-    @include mixin.sm-lt {
+    font-size: 18px;
+    @include mixin.xs {
       display: none;
       width: 0;
     }
     a {
-      color: var(--white-50);
+      display: flex;
+      align-items: center;
+      height: 30px;
+      padding: 0 20px 0 20px;
+
       text-decoration: none;
+      color: var(--white-50);
+
+      &.linkActive {
+        color: var(--white-100);
+        background-color: var(--white-18);
+        border-radius: 0 50px 50px 50px;
+        justify-content: center;
+        border: var(--white-0) 1px solid;
+      }
+
       &:hover {
         color: var(--white-100);
       }
     }
   }
-  .contactBox {
+
+  .menuMobile {
+    display: none;
     min-width: 16px;
-    
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 50px;
+    z-index: 1;
 
-
-
-    @include mixin.sm-lt {
+    @include mixin.xs {
+      background-color: unset;
+      border-left: none;
+      border-right: none;
+      display: flex;
       border-top: var(--white-100) 1px solid;
       border-bottom: var(--white-100) 1px solid;
-      width: 16px;
+      width: 1px;
       height: 9px;
       color: transparent;
       cursor: pointer;
     }
+  }
+  .menuVisible {
+    display: none;
 
-    .contact {
-      min-height: 50px;
-
+    @include mixin.xs {
+      padding: 50px;
+      display: flex;
+      position: fixed;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
       font-family: gt planar;
-      font-size: 14px;
-      color: var(--white-50);
-
-      a {
-        color: var(--white-50);
-        width: 50px;
-        text-decoration: none;
-        &:hover {
-          color: var(--white-100);
-        }
-        @include mixin.sm-lt {
-          display: none;
-        }
-      }
+      color: var(--white-100);
+      background-color: var(--white-12);
     }
+  }
+  .listMenuMobile {
+    gap: 15px;
+    font-size: 32px;
   }
 }
