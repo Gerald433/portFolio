@@ -1,0 +1,126 @@
+@use "../../assets/styles/mixins" as mixin;
+
+main {
+  background-color: var(--white-12);
+  height: 100%;
+  .major {
+    height: 100%;
+    .global {
+      width: 100%;
+      gap: 100px;
+      margin-top: 100px;
+      align-items: flex-start;
+      justify-content: space-between;
+      background-color: var(--white-12);
+      color: var(--white-100);
+      @include mixin.lg-lt {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+      }
+
+      .textZone {
+        max-width: 552px;
+        padding-top: 80px;
+        .preTitle,
+        .descriptif {
+          font-size: 22px;
+          @include mixin.sm-lt {
+            font-size: 20px;
+          }
+        }
+        .preTitle,
+        .descriptif,
+        label {
+          font-family: gt planar;
+        }
+        .descriptif {
+          line-height: 157%;
+        }
+        .title {
+          font-size: 64px;
+          padding-top: 10px;
+          @include mixin.sm-lt {
+            font-size: 34px;
+          }
+        }
+      }
+
+      // bloc à droite
+      .formGlobal {
+        z-index: 1;
+        min-width: 624px;
+        height: 853px;
+        padding: 80px;
+        flex-wrap: nowrap;
+        background-color: var(--white-18);
+        border-radius: 10px;
+        width: 50%;
+        @include mixin.sm-lt {
+          min-width: 100%;
+          padding: 30px 0 0 0;
+        }
+
+        .info {
+          @include mixin.sm-lt {
+            display: none;
+          }
+        }
+
+        .formTitle {
+          max-width: 336px;
+          font-size: 36px;
+        }
+
+        form {
+          padding-top: 0px;
+          label {
+            padding-top: 50px;
+            font-size: 16px;
+            color: var(--white-50);
+          }
+          input {
+            width: 100%;
+            padding-top: 20px;
+            border: none;
+            border-bottom: 1px solid var(--white-50);
+            background-color: var(--white-18);
+            font-size: 22px;
+            color: var(--white-100);
+            @include mixin.sm-lt {
+              font-size: 20px;
+            }
+          }
+
+          .formSection {
+            padding-top: 50px;
+            @include mixin.sm-lt {
+              font-size: 5px;
+            }
+          }
+
+          button {
+            margin-top: 45px;
+            width: 157px;
+            height: 58px;
+            border-radius: 50px;
+            color: white;
+            background-color: var(--primary);
+            font-size: 20px;
+            font-family: gt planar;
+
+            .vector {
+              padding-left: 15px;
+            }
+          }
+        }
+      }
+    }
+    .blackSpace {
+      background-color: var(--white-0);
+      width: 100%;
+      height: 100%;
+      margin-top: -200px;
+    }
+  }
+}
