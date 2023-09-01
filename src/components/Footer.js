@@ -24,9 +24,13 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to={cv} target="_blank" rel="noopener noreferrer">
+                <a
+                  href="/images/CV.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   CV
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
