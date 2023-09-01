@@ -1,0 +1,70 @@
+@use "../../assets/styles/mixins" as mixin;
+.top {
+  color: var(--white-100);
+
+  .titlePrincipal {
+    margin-top: 80px;
+    font-size: 157px;
+
+    @include mixin.lg-lt {
+      margin-top: 40px;
+      font-size: 96px;
+    }
+    @include mixin.sm-lt {
+      margin-top: 40px;
+      font-size: 48px;
+    }
+  }
+
+  .blocPrincipal {
+    .blocText {
+      align-items: start;
+    }
+  }
+  .blocPrincipal {
+    align-items: self-start;
+
+    margin-top: 20px;
+  }
+
+  .blocText {
+    .job,
+    .specialisation {
+      font-size: 48px;
+
+      @include mixin.lg-lt {
+        font-size: 40px;
+      }
+      @include mixin.sm-lt {
+        font-size: 34px;
+      }
+    }
+
+    .specialisation {
+      font-family: Acorn ExtraLight;
+      @include mixin.sm-lt {
+        font-size: 34px;
+        font-family: Acorn;
+      }
+    }
+
+    .indications {
+      font-size: 28px;
+      font-family: gt planar;
+      color: var(--white-66);
+      max-width: 718px;
+      // color: var(--white-66);
+
+      line-height: 158%;
+
+      @include mixin.lg-lt {
+        max-width: 500px;
+        font-size: 18px;
+      }
+
+      @include mixin.sm-lt {
+        max-width: 318px;
+      }
+    }
+  }
+}
