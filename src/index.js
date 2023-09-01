@@ -16,7 +16,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Header />
-    <main className="flex-fill container">
+    <main>
       <Routes>
         <Route path="/" element={<ProjetsList />} />
         <Route path="/projets/:projetId" element={<Projet />} />
