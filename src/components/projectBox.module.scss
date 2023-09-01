@@ -1,0 +1,26 @@
+.box {
+  position: relative;
+  width: 48%;
+  height: 670px;
+  //   background-color: var(--white-84);
+  border: 1px solid black;
+  overflow: hidden;
+
+  .formation {
+    padding-top: 50px;
+    color: var(--white-66);
+  }
+
+  .title {
+    font-size: 48px;
+  }
+
+  .knowMore {
+    color: var(--primary);
+    padding-top: 20px;
+  }
+
+  .phoneBlack {
+    padding-top: 80px;
+  }
+}
