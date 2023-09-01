@@ -9,20 +9,18 @@ import whiteTablet from "../../assets/images/white-tablette.svg";
 const ProjetsList = function () {
   return (
     <>
-      <div className={`${styles.top} container d-flex flex-column br`}>
-        <h1 className={`${styles.titlePrincipal} br`}>I'm gérald g.</h1>
+      <div className={`${styles.top} container d-flex flex-column `}>
+        <h1 className={`${styles.titlePrincipal} `}>I'm gérald g.</h1>
         <span className={`${styles.job} br`}>Développeur Web Front-end,</span>
-        <span className={`${styles.specialisation} br`}>
-          JavaScript - React.
-        </span>
-        <p className={`${styles.indications} br `}>
+        <span className={`${styles.specialisation} br`}>JavaScript - React.</span>
+        <p className={`${styles.indications} `}>
           Explorez ci-dessous quelques exemples de mes réalisations, illustrant
           mon intéret pour le développement de solutions digitale pertinantes
         </p>
       </div>
 
       <div
-        className={`${styles.presentationInFour} container d-flex justify-content-center align-items-center br`}
+        className={`${styles.presentationInFour} container d-flex justify-content-center align-items-center `}
       >
         <ProjectBox src={whitePhone} className={`${styles.ligth}`} />
 
@@ -33,7 +31,7 @@ const ProjetsList = function () {
         <ProjectBox src={blackPhone} className={styles.dark} />
       </div>
 
-      <div className={`${styles.middle} container d-flex flex-column br`}>
+      <div className={`${styles.middle} container d-flex flex-column `}>
         <h2 className={`${styles.middleTitle}`}>En cours</h2>
         <span className={`${styles.middleIndications} `}>
           Découvrez mes projets de développement web en cours,
@@ -41,14 +39,14 @@ const ProjetsList = function () {
       </div>
 
       <div
-        className={`${styles.presentationInFour} container d-flex justify-content-center align-items-center br`}
+        className={`${styles.presentationInFour} container d-flex justify-content-center align-items-center `}
       >
         <ProjectBox src={whitePhone} className={`${styles.ligth}`} />
 
         <ProjectBox src={blackTablet} className={styles.dark} />
       </div>
 
-      <p className={`${styles.finalParagraph} container d-flex flex-column br`}>
+      <p className={`${styles.finalParagraph} container d-flex flex-column `}>
         Ces projets ne sont que quelques-uns parmi les plus significatifs que
         j'ai réalisés. Mon portfolio complet est disponible sur mon profil
         GitHub, où vous pouvez explorer une variété de réalisations techniques.

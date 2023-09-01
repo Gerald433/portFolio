@@ -67,13 +67,6 @@
   flex-wrap: wrap;
   gap: 20px;
 
-  // @include mixin.lg-lt {
-
-  // }
-
-  // @include mixin.md-lt {
-  //   margin-top: 30px;
-  // }
 
   .dark {
     background-color: var(--white-0);
@@ -124,5 +117,7 @@
   margin-bottom: 300px;
   @include mixin.sm-lt {
     font-size: 24px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
