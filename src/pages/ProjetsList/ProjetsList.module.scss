@@ -1,0 +1,74 @@
+.top {
+  color: var(--white-100);
+
+  .titlePrincipal {
+    margin-top: 80px;
+    font-size: 157px;
+  }
+
+  .job{
+margin-top: 20px;
+  }
+
+  .job,
+  .specialisation {
+    font-size: 48px;
+  }
+
+  .specialisation {
+    font-family: Acorn ExtraLight;
+  }
+
+  .indications {
+    font-size: 28px;
+    font-family: gt planar;
+    color: var(--white-66);
+    max-width: 718px;
+    // color: var(--white-66);
+    text-align: center;
+    line-height: 158%;
+  }
+}
+
+.presentationInFour {
+  margin-top: 100px;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  .dark {
+    background-color: var(--white-0);
+    color: white;
+  }
+
+  .ligth {
+    background-color: var(--white-84);
+  }
+}
+
+.middle {
+  color: var(--white-100);
+  margin-top: 100px;
+
+  .middleTitle {
+    font-size: 157px;
+  }
+
+  .middleIndications {
+    font-size: 28px;
+    font-family: gt planar;
+    max-width: 718px;
+    color: var(--white-66);
+    text-align: center;
+  }
+}
+
+.finalParagraph {
+  color: var(--white-66);
+  line-height: 158%;
+  font-family: gt planar;
+  font-size: 36px;
+  max-width: 718px;
+  margin-top: 200px;
+  margin-bottom: 300px;
+}
