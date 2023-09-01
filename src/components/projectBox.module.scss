@@ -12,10 +12,6 @@
     width: 100%;
   }
 
-  @include mixin.md-lt {
-    height: 503px;
-  }
-
   @include mixin.xs {
     height: 503px;
   }
@@ -38,7 +34,7 @@
     padding-top: 50px;
 
     @include mixin.xs {
-      padding-top: 50px;
+      // padding-top: 50px;
       width: 70%;
     }
   }
