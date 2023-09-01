@@ -1,22 +1,44 @@
+@use "../../assets/styles/mixins" as mixin;
+
 .top {
   color: var(--white-100);
 
   .titlePrincipal {
     margin-top: 80px;
     font-size: 157px;
+
+    @include mixin.lg-lt {
+      margin-top: 40px;
+      font-size: 96px;
+    }
+    @include mixin.sm-lt {
+      margin-top: 40px;
+      font-size: 48px;
+    }
   }
 
-  .job{
-margin-top: 20px;
+  .job {
+    margin-top: 20px;
   }
 
   .job,
   .specialisation {
     font-size: 48px;
+
+    @include mixin.lg-lt {
+      font-size: 40px;
+    }
+    @include mixin.sm-lt {
+      font-size: 34px;
+    }
   }
 
   .specialisation {
     font-family: Acorn ExtraLight;
+    @include mixin.sm-lt {
+      font-size: 34px;
+      font-family: Acorn;
+    }
   }
 
   .indications {
@@ -27,6 +49,15 @@ margin-top: 20px;
     // color: var(--white-66);
     text-align: center;
     line-height: 158%;
+
+    @include mixin.lg-lt {
+      max-width: 500px;
+      font-size: 18px;
+    }
+
+    @include mixin.sm-lt {
+      max-width: 318px;
+    }
   }
 }
 
@@ -35,6 +66,14 @@ margin-top: 20px;
   width: 100%;
   flex-wrap: wrap;
   gap: 20px;
+
+  // @include mixin.lg-lt {
+
+  // }
+
+  // @include mixin.md-lt {
+  //   margin-top: 30px;
+  // }
 
   .dark {
     background-color: var(--white-0);
@@ -52,6 +91,14 @@ margin-top: 20px;
 
   .middleTitle {
     font-size: 157px;
+
+    @include mixin.lg-lt {
+      font-size: 96px;
+    }
+
+    @include mixin.sm-lt {
+      font-size: 48px;
+    }
   }
 
   .middleIndications {
@@ -60,6 +107,10 @@ margin-top: 20px;
     max-width: 718px;
     color: var(--white-66);
     text-align: center;
+
+    @include mixin.sm-lt {
+      font-size: 20px;
+    }
   }
 }
 
@@ -71,4 +122,7 @@ margin-top: 20px;
   max-width: 718px;
   margin-top: 200px;
   margin-bottom: 300px;
+  @include mixin.sm-lt {
+    font-size: 24px;
+  }
 }
