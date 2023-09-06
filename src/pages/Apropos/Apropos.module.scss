@@ -1,6 +1,12 @@
 @use "../../assets/styles/mixins" as mixin;
 .top {
+  max-width: 1000px;
   color: var(--white-100);
+  align-items: center;
+  @include mixin.sm-lt {
+   width: 100%;
+    
+  }
 
   .titlePrincipal {
     margin-top: 80px;
@@ -19,12 +25,35 @@
   .blocPrincipal {
     .blocText {
       align-items: start;
+      
+    }
+    @include mixin.sm-lt {
+      flex-direction: column;
+      
     }
   }
   .blocPrincipal {
     align-items: self-start;
-
+    gap: 65px;
     margin-top: 20px;
+
+    @include mixin.lg-lt {
+      gap: 30px;
+    }
+
+    @include mixin.sm-lt {
+      width: 90%;
+       
+     }
+
+    .avatar {
+      max-width: 100%;
+
+      @include mixin.sm-lt {
+        width: 100%;
+         border-radius: 20px;
+       }
+    }
   }
 
   .blocText {
@@ -49,22 +78,262 @@
     }
 
     .indications {
-      font-size: 28px;
-      font-family: gt planar;
+      padding-top: 22px;
+      font-size: 22px;
+      font-family: GT Planar;
       color: var(--white-66);
       max-width: 718px;
-      // color: var(--white-66);
-
-      line-height: 158%;
+      line-height: 168%;
 
       @include mixin.lg-lt {
         max-width: 500px;
-        font-size: 18px;
+        font-size: 20px;
       }
 
       @include mixin.sm-lt {
-        max-width: 318px;
+        width: 100%;
       }
     }
+  }
+}
+
+.itemList {
+  width: 400px;
+  margin: auto;
+  margin-top: 50px;
+
+  @include mixin.sm-lt {
+    max-width: 325px;
+  }
+
+  .one,
+  .two {
+    // padding-right: 200px;
+    margin-bottom: 40px;
+
+    flex-direction: column;
+    gap: 40px;
+
+    
+
+    .itemChildren {
+      color: var(--white-100);
+      justify-content: space-between;
+
+      @include mixin.xs {
+        flex-direction: column;
+       
+      }
+    }
+    .small {
+      width: 400px;
+      @include mixin.lg-lt {
+        width: 330px;
+      }
+    }
+
+    .big {
+      width: 600px;
+      @include mixin.lg-lt {
+        width: 512px;
+      }
+    }
+
+    .small,
+    .big {
+      @include mixin.sm-lt {
+        max-width: 325px;
+      }
+    }
+
+    .left {
+      width: 140px;
+      font-size: 20px;
+      @include mixin.xs {
+        text-align: left;
+       
+      }
+    }
+
+    .right {
+      font-size: 24px;
+    }
+
+    .left,
+    .right {
+      font-family: GT Planar;
+    }
+  }
+  .one {
+    align-items: flex-end;
+  }
+  .two {
+    align-items: flex-start;
+  }
+}
+
+.middle {
+  color: var(--white-100);
+  margin-top: 150px;
+  align-items: center;
+
+  .middleTitle {
+    font-size: 157px;
+
+    @include mixin.lg-lt {
+      font-size: 96px;
+    }
+
+    @include mixin.sm-lt {
+      font-size: 48px;
+    }
+  }
+
+  .middleIndications {
+    font-size: 22px;
+    font-family: GT Planar;
+    max-width: 863px;
+    color: var(--white-66);
+    text-align: center;
+
+    @include mixin.sm-lt {
+      font-size: 20px;
+    }
+  }
+}
+
+.competenceList {
+  margin-top: 100px;
+  max-width: 1384px;
+  padding: 100px;
+  background-color: var(--white-28);
+  border-radius: 18px;
+  color: var(--white-100);
+  .languagesOutils {
+    justify-content: space-between;
+  }
+
+  .titleCompetence {
+    font-size: 24px;
+  }
+
+  .textCompetence,
+  .textOutil {
+    font-size: 20px;
+    font-family: GT Planar;
+    color: var(--white-66);
+  }
+
+  .textCompetence {
+    padding-right: 50px;
+  }
+
+  .logosCompetence,
+  .logosOutils {
+    max-width: 500px;
+    flex-wrap: wrap;
+    gap: 5px 100px;
+
+    .logosOutils {
+      gap: 100px;
+    }
+
+    .unitLogosCompetence,
+    .unitLogosOutil {
+      width: 190px;
+      height: 100px;
+      // height: 50px;
+      text-align: start;
+      margin-bottom: 10px;
+    }
+  }
+
+  .finalZoneCompetence {
+    width: 100%;
+    justify-content: space-between;
+
+    .finalCompetence {
+      max-width: 728px;
+      font-family: GT Planar;
+      font-size: 20px;
+      color: var(--white-66);
+    }
+
+    .browseProjet {
+      padding-left: 50px;
+      padding-right: 50px;
+      border-style: none;
+      flex-wrap: nowrap;
+      // max-width: 259px;
+      height: 58px;
+      border-radius: 50px;
+      color: white;
+      background-color: var(--primary);
+      font-size: 20px;
+      font-family: GT Planar;
+      align-items: center;
+    }
+  }
+}
+
+.transitionText {
+  padding-top: 100px;
+  max-width: 706px;
+  font-family: GT Planar;
+  font-size: 36px;
+  margin: auto;
+  color: var(--white-100);
+  line-height: 158%;
+}
+
+.brik {
+  margin-top: 100px;
+  color: var(--white-100);
+  gap: 20px;
+
+  .styleBrik {
+    border-radius: 18px;
+    background-color: var(--white-28);
+    padding: 50px;
+  }
+
+  .number,
+  .titleBrik {
+    color: var(--primary);
+    font-size: 36px;
+  }
+
+  .number {
+    font-family: Acorn ExtraLight;
+  }
+
+  .textBrik {
+    font-size: 24px;
+    color: var(--white-77);
+  }
+
+  .grow {
+    flex: 1;
+  }
+}
+
+.conclusion {
+  max-width: 577px;
+  line-height: 158%;
+  margin: auto;
+  margin-top: 100px;
+  color: var(--white-100);
+  font-size: 36px;
+  font-family: GT Planar;
+}
+
+.localisation {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  justify-content: center;
+  gap: 50px;
+  .decor {
+    justify-content: space-between;
+    gap: 35px;
   }
 }
