@@ -16,27 +16,29 @@ import postman from "../../assets/images/outils/postman.svg";
 import eglise from "../../assets/images/local/eglise.svg";
 import blueLac from "../../assets/images/local/blueLac.svg";
 import horizon from "../../assets/images/local/horizon.svg";
+import logoReact from "../../assets/images/languages/logoReact.svg";
+import typeScriptLogo from "../../assets/images/languages/typeScriptLogo.svg";
 
 function Apropos() {
   return (
     <>
-      <div className={` container d-flex flex-column br`}>
-        <div className={`${styles.top}  d-flex flex-column br`}>
+      <div className={` container d-flex flex-column `}>
+        <div className={`${styles.top}  d-flex flex-column `}>
           <h1 className={`${styles.titlePrincipal} `}>I'm gerald g.</h1>
-          <div className={`${styles.blocPrincipal}  d-flex  br`}>
+          <div className={`${styles.blocPrincipal}  d-flex  `}>
             <img
               className={`${styles.avatar} `}
               src={avatar}
               alt="Ma présentation"
             />
-            <div className={`${styles.blocText}  d-flex flex-column br`}>
+            <div className={`${styles.blocText}  d-flex flex-column `}>
               <span className={`${styles.job} br`}>
                 Développeur Web Front-end,
               </span>
-              <span className={`${styles.specialisation} br`}>
+              <span className={`${styles.specialisation} `}>
                 JavaScript - React.
               </span>
-              <p className={`${styles.indications} br`}>
+              <p className={`${styles.indications} `}>
                 Je crée des solutions web fonctionnelles et engageantes, donnant
                 vie aux idées numériques.
                 <br />
@@ -47,150 +49,158 @@ function Apropos() {
           </div>
         </div>
 
-        <div className={`${styles.itemList} d-flex  flex-column br`}>
-          <div className={`${styles.one} d-flex  br`}>
+        <div className={`${styles.itemList} d-flex  flex-column `}>
+          <div className={`${styles.one} d-flex `}>
             <Item
-              className={`${styles.itemChildren}  ${styles.small} d-flex br`}
+              className={`${styles.itemChildren}  ${styles.small} d-flex `}
             >
               <span className={`${styles.left}`}>Projets réalisés</span>
-              <span className={`${styles.right}`}>25</span>
+              <span className={`${styles.rightbloc}`}>25</span>
             </Item>
 
-            <Item className={`${styles.itemChildren} ${styles.big} d-flex br`}>
-              <span className={`${styles.left} br`}>
-                Technologie la plus utilisée
-              </span>
-              <span className={`${styles.right} br`}>React</span>
+            <Item className={`${styles.itemChildren} ${styles.big} d-flex `}>
+              <span className={`${styles.left} `}>Technologie dominante</span>
+              <span className={`${styles.right} `}>React</span>
+              <img
+                className={`${styles.gost} `}
+                src={logoReact}
+                alt="logo react"
+              />
             </Item>
           </div>
 
-          <div className={`${styles.two} d-flex  br`}>
-            <Item className={`${styles.itemChildren}  ${styles.big} d-flex br`}>
-              <span className={`${styles.left} br`}>
-                Technologie récemment utilisée
-              </span>
-              <span className={`${styles.right} br`}>TypeScript</span>
+          <div className={`${styles.two} d-flex`}>
+            <Item className={`${styles.itemChildren}  ${styles.big} d-flex `}>
+              <span className={`${styles.left} `}>Technologie récente</span>
+              <span className={`${styles.right} `}>TypeScript</span>
+              <img
+                className={`${styles.gost} `}
+                src={typeScriptLogo}
+                alt="logo typeScript"
+              />
             </Item>
           </div>
         </div>
 
-        <div className={`${styles.middle}  d-flex flex-column br`}>
-          <h2 className={`${styles.middleTitle} br`}>Compétences</h2>
-          <p className={`${styles.middleIndications} br`}>
+        <div className={`${styles.middle}  d-flex flex-column`}>
+          <h2 className={`${styles.middleTitle}`}>Hard Skills</h2>
+          <p className={`${styles.middleIndications} `}>
             Mes compétences techniques et mon intérêt pour le développement
             créent des solutions web sur mesure, répondant à vos besoins et
             favorisant votre croissance.
           </p>
         </div>
 
-        <div className={`${styles.competenceList}  d-flex flex-column br`}>
-          <div className={`${styles.languagesOutils}  d-flex  br`}>
+        <div className={`${styles.competenceList}  d-flex flex-column`}>
+          <div className={`${styles.languagesOutils}  d-flex`}>
             <div>
-              <span className={`${styles.titleCompetence} br`}>Languages</span>
-              <p className={`${styles.textCompetence} br`}>
+              <span className={`${styles.titleCompetence} `}>Languages</span>
+              <p className={`${styles.textCompetence} `}>
                 Une introduction aux langages de développement que j'utilise
                 pour créer des solutions numériques de qualité.
               </p>
-              <div className={`${styles.logosCompetence} d-flex br`}>
+              <div className={`${styles.logosCompetence} d-flex `}>
                 <img
-                  className={`${styles.unitLogosCompetence} br`}
+                  className={`${styles.unitLogosCompetence}`}
                   src={mongo}
                   alt="logo mongo"
                 />
                 <img
-                  className={`${styles.unitLogosCompetence} br`}
+                  className={`${styles.unitLogosCompetence}`}
                   src={node}
                   alt="logo node"
                 />
                 <img
-                  className={`${styles.unitLogosCompetence} br`}
+                  className={`${styles.unitLogosCompetence}`}
                   src={react}
                   alt="logo react"
                 />
                 <img
-                  className={`${styles.unitLogosCompetence} br`}
+                  className={`${styles.unitLogosCompetence}`}
                   src={html}
                   alt="logo html"
                 />
                 <img
-                  className={`${styles.unitLogosCompetence} br`}
+                  className={`${styles.unitLogosCompetence}`}
                   src={sass}
                   alt="logo sass"
                 />
                 <img
-                  className={`${styles.unitLogosCompetence} br`}
+                  className={`${styles.unitLogosCompetence}`}
                   src={css}
                   alt="logo css"
                 />
                 <img
-                  className={`${styles.unitLogosCompetence} br`}
+                  className={`${styles.unitLogosCompetence}`}
                   src={javascript}
                   alt="logo javascript"
                 />
                 <img
-                  className={`${styles.unitLogosCompetence} br`}
+                  className={`${styles.unitLogosCompetence}`}
                   src={typescript}
                   alt="logo typescript"
                 />
               </div>
             </div>
             <div>
-              <span className={`${styles.titleCompetence} br`}>Outils</span>
-              <p className={`${styles.textOutil} br`}>
+              <span className={`${styles.titleCompetence} `}>Outils</span>
+              <p className={`${styles.textOutil} `}>
                 Les outils clés de mon processus créatif.
               </p>
-              <div className={`${styles.logosOutils} d-flex flex-column br`}>
+              <div className={`${styles.logosOutils} d-flex flex-column `}>
                 <img
-                  className={`${styles.unitLogosOutil} br`}
+                  className={`${styles.unitLogosOutil} `}
                   src={git}
                   alt="logo git"
                 />
 
                 <img
-                  className={`${styles.unitLogosOutil} br`}
+                  className={`${styles.unitLogosOutil} `}
                   src={github}
                   alt="logo github"
                 />
 
                 <img
-                  className={`${styles.unitLogosOutil} br`}
+                  className={`${styles.unitLogosOutil} `}
                   src={vscode}
                   alt="logo visual studio code"
                 />
 
                 <img
-                  className={`${styles.unitLogosOutil} br`}
+                  className={`${styles.unitLogosOutil} `}
                   src={postman}
                   alt="logo postman"
                 />
               </div>
             </div>
           </div>
-          <div className={`${styles.finalZoneCompetence} d-flex br`}>
+          <div className={`${styles.finalZoneCompetence} d-flex `}>
             <p className={`${styles.finalCompetence} d-flex br`}>
               Afin de satisfaire vos attentes, je suis enclin à apprendre de
               nouvelles technologies, enrichissant ma curiosité et mon désir
               d'apprentissage.
             </p>
-            <button className={`${styles.browseProjet} d-flex br`}>
+            <button className={`${styles.browseProjet} d-flex `}>
               Parcourir mes projets
             </button>
           </div>
         </div>
 
-        <p className={`${styles.transitionText} d-flex br`}>
+        <p className={`${styles.transitionText} d-flex `}>
           Les compétences et les connaissances techniques sont essentielles,
           mais ce sont les "soft skills" qui apportent une dimension humaine et
-          une capacité d'adaptation à toute situation. En tant que développeur,
-          ma rigueur et mon esprit critique garantissent la qualité et la
-          fiabilité de mes solutions. Mon esprit d'équipe favorise la
-          collaboration, et mon autonomie me permet de gérer efficacement mes
-          tâches. En restant curieux, j'évolue dans un environnement en
-          constante évolution.
+          une capacité d'adaptation à toute situation.
+          <br />
+          <br />
+          En tant que développeur, ma rigueur et mon esprit critique
+          garantissent la qualité et la fiabilité de mes solutions. Mon esprit
+          d'équipe favorise la collaboration, et mon autonomie me permet de
+          gérer efficacement mes tâches. En restant curieux, j'évolue dans un
+          environnement en constante évolution.
         </p>
 
-        <div className={`${styles.brik}  d-flex br`}>
-          <div className={`${styles.styleBrik}`}>
+        <div className={`${styles.brik}  d-flex`}>
+          <div className={`${styles.styleBrik} ${styles.middleGrow}`}>
             <span className={`${styles.number}`}>01.</span>
             <h3 className={`${styles.titleBrik}`}>Créer</h3>
             <p className={`${styles.textBrik}`}>
@@ -200,21 +210,23 @@ function Apropos() {
               personnel qui rend chaque projet captivant et épanouissant.
             </p>
           </div>
-          <div className={`${styles.styleBrik}`}>
+          <div className={`${styles.styleBrik} ${styles.middleGrow}`}>
             <span className={`${styles.number}`}>02.</span>
             <h3 className={`${styles.titleBrik}`}>Collaborer</h3>
             <p className={`${styles.textBrik}`}>
-              Bénéficiant d'une solide expertise technique, je suis également
-              doté d'excellentes compétences en communication, en résolution de
-              problèmes et en travail d'équipe, ce qui me permet de contribuer
-              de manière efficace et collaborative aux projets tout en
-              favorisant un environnement propice à l'innovation et à la
+              Avec une solide expertise technique, je possède d'excellentes
+              compétences en communication, en résolution de problèmes, et en
+              travail d'équipe. Je suis ainsi en mesure de contribuer
+              efficacement à des projets tout en encourageant l'innovation et la
               réussite collective.
             </p>
           </div>
-          <div className={`${styles.styleBrik} ${styles.grow}`}>
-            <span className={`${styles.number}`}>03.</span>
-            <h3 className={`${styles.titleBrik}`}>Satisfaire</h3>
+          <div className={` ${styles.grow}`}>
+            <div className={`${styles.third}`}>
+              <span className={`${styles.number}`}>03.</span>
+              <h3 className={`${styles.titleBrik}`}>Satisfaire</h3>
+            </div>
+
             <p className={`${styles.textBrik}`}>
               Répondre à vos attentes est au sommet de mes priorités. Mon but
               essentiel est de concevoir des solutions qui comblent vos besoins,
@@ -233,7 +245,10 @@ function Apropos() {
         </p>
 
         <div className={`${styles.localisation} d-flex`}>
-          <img src={eglise} alt="eglise de Sainte Sigolène" />
+          <div className={`${styles.eglise}  d-flex flex-column`}>
+            <img src={eglise} alt="eglise de Sainte Sigolène" />
+          </div>
+
           <div className={`${styles.decor}  d-flex flex-column`}>
             <img src={blueLac} alt="le lac bleu" />
             <img src={horizon} alt="horizon" />
