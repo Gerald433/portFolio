@@ -13,9 +13,9 @@ import git from "../../assets/images/outils/git.svg";
 import github from "../../assets/images/outils/github.svg";
 import vscode from "../../assets/images/outils/vscode.svg";
 import postman from "../../assets/images/outils/postman.svg";
-import eglise from "../../assets/images/local/eglise.svg";
-import blueLac from "../../assets/images/local/blueLac.svg";
-import horizon from "../../assets/images/local/horizon.svg";
+import eglise from "../../assets/images/local/eglise.jpg";
+import blueLac from "../../assets/images/local/blueLac.jpg";
+import horizon from "../../assets/images/local/horizon.jpg";
 import logoReact from "../../assets/images/languages/logoReact.svg";
 import typeScriptLogo from "../../assets/images/languages/typeScriptLogo.svg";
 
@@ -51,9 +51,7 @@ function Apropos() {
 
         <div className={`${styles.itemList} d-flex  flex-column `}>
           <div className={`${styles.one} d-flex `}>
-            <Item
-              className={`${styles.itemChildren}  ${styles.small} d-flex `}
-            >
+            <Item className={`${styles.itemChildren}  ${styles.small} d-flex `}>
               <span className={`${styles.left}`}>Projets réalisés</span>
               <span className={`${styles.rightbloc}`}>25</span>
             </Item>
