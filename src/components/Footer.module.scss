@@ -7,18 +7,18 @@
   padding: 100px 0 100px 0;
 
   .titleLink {
-    color: red;
-    font-family: gt planar;
+    color: var(--white-50);
+    font-family: GT Planar;
     font-size: 22px;
-    @include mixin.xs {
-      font-size: 20px;
-    }
+    // @include mixin.xs {
+    //   font-size: 22px;
+    // }
   }
   a {
     text-decoration: none;
     color: white;
     line-height: 50px;
-    font-family: gt planar;
+    font-family: GT Planar;
     font-size: 22px;
   }
   .container {
@@ -56,7 +56,7 @@
     // margin-left: 400px;
     // margin-top: -50px;
     line-height: 50px;
-    font-family: gt planar;
+    font-family: GT Planar;
     font-size: 22px;
     li {
       display: block;
@@ -88,6 +88,6 @@
     width: 100%;
     margin: auto;
     padding: 200px 0px 0px 50px;
-    font-family: gt planar;
+    font-family: GT Planar;
   }
 }
