@@ -3,12 +3,12 @@ import avatar from "../../assets/images/Avatar.svg";
 import Item from "../../components/Item";
 import mongo from "../../assets/images/languages/mongo.svg";
 import node from "../../assets/images/languages/node.svg";
-import react from "../../assets/images/languages/React.svg";
+import react from "../../assets/images/languages/react.svg";
 import html from "../../assets/images/languages/html.svg";
-import sass from "../../assets/images/languages/Sass.svg";
+import sass from "../../assets/images/languages/sass.svg";
 import css from "../../assets/images/languages/css.svg";
-import javascript from "../../assets/images/languages/JavaScript.svg";
-import typescript from "../../assets/images/languages/TypeScript.svg";
+import javascript from "../../assets/images/languages/javaScript.svg";
+import typescript from "../../assets/images/languages/typeScript.svg";
 import git from "../../assets/images/outils/git.svg";
 import github from "../../assets/images/outils/github.svg";
 import vscode from "../../assets/images/outils/vscode.svg";
@@ -17,7 +17,7 @@ import eglise from "../../assets/images/local/eglise.jpg";
 import blueLac from "../../assets/images/local/blueLac.jpg";
 import horizon from "../../assets/images/local/horizon.jpg";
 import logoReact from "../../assets/images/languages/logoReact.svg";
-import typeScriptLogo from "../../assets/images/languages/typeScriptLogo.svg";
+import typeScriptLogo from "../../assets/images/languages/logoTypeScript.svg";
 
 function Apropos() {
   return (
@@ -32,7 +32,7 @@ function Apropos() {
               alt="Ma présentation"
             />
             <div className={`${styles.blocText}  d-flex flex-column `}>
-              <span className={`${styles.job} br`}>
+              <span className={`${styles.job} `}>
                 Développeur Web Front-end,
               </span>
               <span className={`${styles.specialisation} `}>
@@ -173,7 +173,7 @@ function Apropos() {
             </div>
           </div>
           <div className={`${styles.finalZoneCompetence} d-flex `}>
-            <p className={`${styles.finalCompetence} d-flex br`}>
+            <p className={`${styles.finalCompetence} d-flex `}>
               Afin de satisfaire vos attentes, je suis enclin à apprendre de
               nouvelles technologies, enrichissant ma curiosité et mon désir
               d'apprentissage.

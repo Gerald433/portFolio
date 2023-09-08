@@ -32,7 +32,7 @@
   .blocPrincipal {
     align-items: self-start;
     gap: 65px;
-    margin-top: 20px;
+    margin-top: 80px;
 
     @include mixin.lg-lt {
       gap: 30px;
@@ -62,6 +62,12 @@
       }
       @include mixin.sm-lt {
         font-size: 34px;
+      }
+    }
+
+    .job {
+      @include mixin.sm-lt {
+        margin-top: 50px;
       }
     }
 
@@ -96,10 +102,14 @@
 .itemList {
   max-width: 400px;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 100px;
 
   @include mixin.sm-lt {
     width: 90%;
+  }
+
+  @include mixin.xs {
+    margin-top: 50px;
   }
 
   .one,
@@ -184,6 +194,14 @@
   margin-top: 150px;
   align-items: center;
 
+  @include mixin.lg-lt {
+    margin-top: 50px;
+  }
+
+  @include mixin.xs {
+    margin-top: 10px;
+  }
+
   .middleTitle {
     font-size: 157px;
 
@@ -202,9 +220,12 @@
     max-width: 863px;
     color: var(--white-66);
     text-align: center;
+    line-height: 158%;
+    margin-top: 20px;
 
     @include mixin.sm-lt {
       font-size: 20px;
+      width: 90%;
     }
   }
 }
@@ -214,20 +235,21 @@
   max-width: 1384px;
   padding: 100px;
   background-color: var(--white-28);
-  border-radius: 18px;
+  border-radius: 0px 18px 18px 18px;
   color: var(--white-100);
 
   @include mixin.lg-lt {
+    margin-top: 50px;
     padding: 50px;
   }
   @include mixin.sm-lt {
     padding: 20px;
+    border-radius: 0;
   }
 
   .languagesOutils {
     justify-content: space-between;
     border-bottom: solid 1px var(--white-50);
-    padding-bottom: 20px;
     @include mixin.lg-lt {
       flex-direction: column;
     }
@@ -242,6 +264,8 @@
     font-size: 20px;
     font-family: GT Planar;
     color: var(--white-66);
+    padding-top: 30px;
+    line-height: 158%;
   }
 
   .textCompetence {
@@ -269,7 +293,7 @@
   }
 
   .finalZoneCompetence {
-    margin-top: 20px;
+    margin-top: 50px;
     width: 100%;
     justify-content: space-between;
     @include mixin.lg-lt {
@@ -315,9 +339,13 @@
   color: var(--white-100);
   line-height: 158%;
   @include mixin.lg-lt {
+    padding-top: 50px;
     font-size: 32px;
   }
-  @include mixin.lg-lt {
+  @include mixin.sm-lt {
+    width: 90%;
+  }
+  @include mixin.xs {
     font-size: 24px;
   }
 }
@@ -329,6 +357,7 @@
   color: var(--white-100);
   gap: 40px;
   @include mixin.lg-lt {
+    margin-top: 50px;
     flex-direction: column;
 
     align-items: center;
@@ -340,11 +369,11 @@
 
   .styleBrik {
     max-height: 666px;
-    border-radius: 18px;
+    border-radius: 0px 18px 18px 18px;
     background-color: var(--white-28);
     padding: 80px;
 
-    @include mixin.lg-lt {
+    @include mixin.sm-lt {
       border-radius: 0;
     }
   }
@@ -386,8 +415,7 @@
     font-family: GT Planar;
     font-size: 24px;
     color: var(--white-77);
-    @include mixin.lg-lt {
-    }
+
     @include mixin.lg-lt {
       margin-top: 20px;
       width: 90%;
@@ -395,12 +423,12 @@
   }
 
   .grow {
-    border-radius: 18px;
+    border-radius: 0px 18px 18px 18px;
     background-color: var(--white-28);
     padding: 80px;
     display: flex;
     flex-direction: row;
-    max-height: 666px;
+    // max-height: 666px;
     width: 100%;
     gap: 50px;
 
@@ -412,12 +440,8 @@
     }
 
     @include mixin.sm-lt {
-      // min-height: 400px;
       border-radius: 0;
       padding: 30px;
-    }
-
-    .third {
     }
 
     .textBrik {
@@ -436,9 +460,13 @@
   font-family: GT Planar;
 
   @include mixin.lg-lt {
+    margin-top: 50px;
     font-size: 32px;
   }
-  @include mixin.lg-lt {
+  @include mixin.sm-lt {
+    width: 90%;
+  }
+  @include mixin.xs {
     font-size: 24px;
   }
 }
@@ -449,8 +477,20 @@
   justify-content: center;
   gap: 50px;
   width: 100%;
+  @include mixin.lg-lt {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  @include mixin.xs {
+    gap: 5px;
+  }
   @include mixin.md-lt {
     flex-direction: column;
+  }
+
+  @include mixin.xs {
+    gap: 5px;
   }
 
   .eglise,
@@ -465,5 +505,8 @@
 
   .decor {
     gap: 50px;
+    @include mixin.xs {
+      gap: 5px;
+    }
   }
 }
