@@ -1,0 +1,62 @@
+@use "../../assets/styles/mixins" as mixin;
+
+.sect {
+  background-image: url("../../assets/images/backgroundError.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+  @include mixin.md-lt {
+    flex-direction: column-reverse;
+  }
+
+  .general {
+    color: var(--white-100);
+
+    justify-content: center;
+
+    h1 {
+      max-width: 552px;
+      padding-top: 30px;
+      font-size: 96px;
+      line-height: 113%;
+
+      @include mixin.xs {
+        max-width: 270px;
+        font-size: 64px;
+      }
+    }
+
+    .message {
+      max-width: 432px;
+      line-height: 158%;
+      padding-top: 30px;
+      @include mixin.xs {
+        max-width: 270px;
+      }
+    }
+
+    .number {
+      font-size: 22px;
+    }
+
+    .back {
+      padding-top: 60px;
+      text-decoration: none;
+      color: var(--white-100);
+      font-size: 20px;
+    }
+  }
+  .spaceAstro {
+    max-width: 373px;
+    max-height: 392px;
+    transform: rotate(5deg);
+
+    @include mixin.xs {
+      display: none;
+    }
+  }
+}

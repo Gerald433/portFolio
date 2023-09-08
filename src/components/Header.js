@@ -12,6 +12,17 @@ function Header() {
     setMenuVisible(!menuVisible);
   }
 
+  const isOnErrorPage = location.pathname !== "/" &&
+  location.pathname !== "/projets/:projetId" &&
+  location.pathname !== "/a-propos" &&
+  location.pathname !== "/contact"; 
+
+  
+  if (isOnErrorPage) {
+    return null; // Ne pas rendre le header sur la page d'erreur
+  }
+
+
   return (
     <header className={`${styles.header}`}>
       <div className={`${styles.container} container d-flex`}>
