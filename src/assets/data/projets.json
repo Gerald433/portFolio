@@ -2,6 +2,7 @@
   "ProjetsFinis": [
     {
       "id": "bo875trh9",
+      "type": "FORMATION",
       "title": "Booki",
       "technologies": [
         {
@@ -32,8 +33,18 @@
 
     {
       "id": "om432dohj8",
+      "type": "FORMATION",
       "title": "ohmyfood",
-      "technologies": ["HTML", "CSS"],
+      "technologies": [
+        {
+          "nom": "HTML",
+          "percent": "50%"
+        },
+        {
+          "nom": "CSS",
+          "percent": "50%"
+        }
+      ],
       "specifications": [
         "Site Responsive",
         "Conforme à la maquette",
@@ -50,13 +61,24 @@
       "evaluation": "Le code des livrables est très clair, bien indenté et les blocs principaux sont clairement repérables sur les pages.\n\nL'utilisation des bonnes balises sémantiques est aussi un point fort à noter.\n\nAxes d'amélioration :\n\nUne utilisation de Sass serait très bien pour compléter la compréhension du langage de styles.\n\nRemarques :\n\nRAS. Expression orale irréprochable, tenue correcte.",
       "display": "yes",
       "position": "1",
-      "instrument": "images/white-Phone.svg"
+      "instrument": "images/white-Phone.svg",
+      "textAlt": "Telephone blanc"
     },
 
     {
       "id": "ptr195wbdp1",
+      "type": "FORMATION",
       "title": "La panthère",
-      "technologies": ["HTML", "CSS"],
+      "technologies": [
+        {
+          "nom": "HTML",
+          "percent": "50%"
+        },
+        {
+          "nom": "CSS",
+          "percent": "50%"
+        }
+      ],
       "specifications": [
         "Analyse de l'état actuel de SEO",
         "Recommandations d'améliorations du SEO du site",
@@ -72,13 +94,24 @@
       "evaluation": "Votre slider est très bien fait, il montre correctement les améliorations que vous avez mises en place et leur impact. Très bonne soutenance, vous avez su montrer que vous possédiez les compétences SEO pour ce genre de projet, continuez comme ça.",
       "display": "yes",
       "position": "2",
-      "instrument": "images/black-tablette.svg"
+      "instrument": "images/black-tablette.svg",
+      "textAlt": "Tablette noire"
     },
 
     {
       "id": "knkp886dlcp2",
+      "type": "FORMATION",
       "title": "Kanap",
-      "technologies": ["HTML", "CSS", "JS"],
+      "technologies": [
+        {
+          "nom": "HTML",
+          "percent": "50%"
+        },
+        {
+          "nom": "CSS",
+          "percent": "50%"
+        }
+      ],
       "specifications": [
         "Appels API",
         "Afficher les produits dynamiquement",
@@ -95,13 +128,24 @@
       "evaluation": "Gérald  a fait un excellent travail! il a bien défendu son travail, il a manifesté une très bonne compréhension du code, et a su fournir des éléments de réponse pertinents face aux questions posées. Très bon travail, bon courage pour la suite de parcours",
       "display": "yes",
       "position": "3",
-      "instrument": "images/white-tablette.svg"
+      "instrument": "images/white-tablette.svg",
+      "textAlt": "Tablette blanche"
     },
 
     {
       "id": "ipkp696aiai3",
+      "type": "FORMATION",
       "title": "Piiquante",
-      "technologies": ["HTML", "CSS", "JS"],
+      "technologies": [
+        {
+          "nom": "HTML",
+          "percent": "50%"
+        },
+        {
+          "nom": "CSS",
+          "percent": "50%"
+        }
+      ],
       "specifications": [
         "Mettre en oeuvre des opérations CRUD de manière sécurisée",
         "Stocker des données de manière sécurisée"
@@ -113,8 +157,18 @@
 
     {
       "id": "ssak114lgvx4",
+      "type": "FORMATION",
       "title": "Kasa",
-      "technologies": ["HTML", "CSS", "JS", "REACT"],
+      "technologies": [
+        {
+          "nom": "HTML",
+          "percent": "50%"
+        },
+        {
+          "nom": "CSS",
+          "percent": "50%"
+        }
+      ],
       "specifications": [
         "Initialiser une application avec Create React App",
         "Utilisation des Hooks useState et useEffect",
@@ -126,15 +180,26 @@
       "evaluation": "Tout fonctionne parfaitement suivant le cahier des charges et le code est très bien structuré. Le projet est très bien expliqué, les choix techniques sont clairement expliqués et le fonctionnement du site présenté en détails.",
       "display": "yes",
       "position": "4",
-      "instrument": "images/black-Phone.svg"
+      "instrument": "images/black-Phone.svg",
+      "textAlt": "Telephone noir"
     }
   ],
 
   "ProjetsEnCours": [
     {
       "id": "cv254nbh6",
-      "title": "musique",
-      "technologies": ["HTML", "CSS"],
+      "type": "PERSONNEL",
+      "title": "Johnny's return",
+      "technologies": [
+        {
+          "nom": "HTML",
+          "percent": "50%"
+        },
+        {
+          "nom": "CSS",
+          "percent": "50%"
+        }
+      ],
       "specifications": [
         "Site Responsive",
         "Conforme à la maquette",
@@ -146,7 +211,43 @@
         "Conformité W3C",
         "Balisage sémantique adapté"
       ],
-      "description": "L'entreprise souhaitait développer un site Internet permettant aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Ma mission consistait à réaliser l'intégration des maquettes pour les versions desktop, tablette et mobile."
+      "description": "L'entreprise souhaitait développer un site Internet permettant aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Ma mission consistait à réaliser l'intégration des maquettes pour les versions desktop, tablette et mobile.",
+      "display": "yes",
+      "position": "1",
+      "instrument": "images/white-Phone.svg",
+      "textAlt": "Telephone blanc"
+    },
+
+    {
+      "id": "cv254nbh6",
+      "type": "PERSONNEL",
+      "title": "Blog",
+      "technologies": [
+        {
+          "nom": "HTML",
+          "percent": "50%"
+        },
+        {
+          "nom": "CSS",
+          "percent": "50%"
+        }
+      ],
+      "specifications": [
+        "Site Responsive",
+        "Conforme à la maquette",
+        "Interactivité visuelle",
+        "Gestion des images selon l'affichage",
+        "Navigation via les ancres",
+        "Cartes cliquables",
+        "Disposition dynamique",
+        "Conformité W3C",
+        "Balisage sémantique adapté"
+      ],
+      "description": "L'entreprise souhaitait développer un site Internet permettant aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Ma mission consistait à réaliser l'intégration des maquettes pour les versions desktop, tablette et mobile.",
+      "display": "yes",
+      "position": "2",
+      "instrument": "images/black-tablette.svg",
+      "textAlt": "Tablette noire"
     }
   ]
 }
