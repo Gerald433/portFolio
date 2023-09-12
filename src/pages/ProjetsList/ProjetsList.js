@@ -1,18 +1,28 @@
 import styles from "./ProjetsList.module.scss";
 import React from "react";
+import { useEffect, useState } from "react";
+// import { useParams, useNavigate } from "react-router-dom";
 import ProjectBox from "../../components/projectBox";
-import blackPhone from "../../assets/images/black-phone.svg";
-import whitePhone from "../../assets/images/white-phone.svg";
-import blackTablet from "../../assets/images/black-tablette.svg";
-import whiteTablet from "../../assets/images/white-tablette.svg";
+// import blackPhone from "../../assets/images/black-phone.svg";
+// import whitePhone from "../../assets/images/white-phone.svg";
+// import blackTablet from "../../assets/images/black-tablette.svg";
+// import whiteTablet from "../../assets/images/white-tablette.svg";
+import projetsComplet from "../../assets/data/projets.json";
 
 const ProjetsList = function () {
+  const projetsOnDisplay = projetsComplet.ProjetsFinis.filter(
+    (projet) => projet.display === "yes"
+  );
+
   return (
     <>
       <div className={`${styles.top} container d-flex flex-column `}>
         <h1 className={`${styles.titlePrincipal} `}>I'm gérald g.</h1>
+        {console.log("salut")}
         <span className={`${styles.job} br`}>Développeur Web Front-end,</span>
-        <span className={`${styles.specialisation} br`}>JavaScript - React.</span>
+        <span className={`${styles.specialisation} br`}>
+          JavaScript - React.
+        </span>
         <p className={`${styles.indications} `}>
           Explorez ci-dessous quelques exemples de mes réalisations, illustrant
           mon intéret pour le développement de solutions digitale pertinantes
@@ -22,13 +32,14 @@ const ProjetsList = function () {
       <div
         className={`${styles.presentationInFour} container d-flex justify-content-center align-items-center `}
       >
-        <ProjectBox src={whitePhone} className={`${styles.ligth}`} />
-
-        <ProjectBox src={blackTablet} className={styles.dark} />
-
-        <ProjectBox src={whiteTablet} className={styles.ligth} />
-
-        <ProjectBox src={blackPhone} className={styles.dark} />
+        {projetsOnDisplay.map((projet, index) => (
+          <ProjectBox
+            key={projet.id}
+            title={projet.title}
+            src={projet.instrument}
+            className={index % 2 === 0 ? styles.ligth : styles.dark}
+          />
+        ))}
       </div>
 
       <div className={`${styles.middle} container d-flex flex-column `}>
@@ -38,13 +49,13 @@ const ProjetsList = function () {
         </span>
       </div>
 
-      <div
+      {/* <div
         className={`${styles.presentationInFour} container d-flex justify-content-center align-items-center `}
       >
         <ProjectBox src={whitePhone} className={`${styles.ligth}`} />
 
         <ProjectBox src={blackTablet} className={styles.dark} />
-      </div>
+      </div> */}
 
       <p className={`${styles.finalParagraph} container d-flex flex-column `}>
         Ces projets ne sont que quelques-uns parmi les plus significatifs que

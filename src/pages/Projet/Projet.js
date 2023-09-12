@@ -1,9 +1,10 @@
+import React from "react";
 import { Link } from "react-router-dom";
 
-function Projet() {
+function Projet(title, description, image) {
   return (
     <>
-      <h1>Ici c'est le projet sélectionné</h1>
+      <h1>{title}</h1>
 
       <Link to="/">liste de projets</Link>
     </>

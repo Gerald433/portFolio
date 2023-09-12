@@ -1,6 +1,6 @@
 import styles from "./projectBox.module.scss";
 
-function ProjectBox({ src, className }) {
+function ProjectBox({ src, className, title, description }) {
   return (
     <>
       <div
@@ -10,7 +10,7 @@ function ProjectBox({ src, className }) {
         <h2
           className={`${styles.title} d-flex flex-column justify-content-center`}
         >
-          Booky
+          {title}
         </h2>
         <span className={`${styles.knowMore} `}>En savoir plus</span>
         <img
