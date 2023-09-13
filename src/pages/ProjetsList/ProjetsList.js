@@ -1,7 +1,7 @@
 import styles from "./ProjetsList.module.scss";
 import React from "react";
 import { useEffect, useState } from "react";
-// import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import ProjectBox from "../../components/projectBox";
 // import blackPhone from "../../assets/images/black-phone.svg";
 // import whitePhone from "../../assets/images/white-phone.svg";
@@ -11,6 +11,9 @@ import projetsComplet from "../../assets/data/projets.json";
 
 const ProjetsList = function () {
   const projetsOnDisplay = projetsComplet.ProjetsFinis.filter(
+    (projet) => projet.display === "yes"
+  );
+  const projetsPersoOnDisplay = projetsComplet.ProjetsEnCours.filter(
     (projet) => projet.display === "yes"
   );
 
@@ -35,8 +38,11 @@ const ProjetsList = function () {
         {projetsOnDisplay.map((projet, index) => (
           <ProjectBox
             key={projet.id}
+            projetId={projet.id}
+            type={projet.type}
             title={projet.title}
             src={projet.instrument}
+            textAlt={projet.textAlt}
             className={index % 2 === 0 ? styles.ligth : styles.dark}
           />
         ))}
@@ -49,13 +55,23 @@ const ProjetsList = function () {
         </span>
       </div>
 
-      {/* <div
+      <div
         className={`${styles.presentationInFour} container d-flex justify-content-center align-items-center `}
       >
-        <ProjectBox src={whitePhone} className={`${styles.ligth}`} />
+        {projetsPersoOnDisplay.map((projet, index) => (
+          <ProjectBox
+            key={projet.id}
+            type={projet.type}
+            title={projet.title}
+            src={projet.instrument}
+            textAlt={projet.textAlt}
+            className={index % 2 === 0 ? styles.ligth : styles.dark}
+          />
+        ))}
+        {/* <ProjectBox  className={`${styles.ligth}`} />
 
-        <ProjectBox src={blackTablet} className={styles.dark} />
-      </div> */}
+        <ProjectBox  className={styles.dark} /> */}
+      </div>
 
       <p className={`${styles.finalParagraph} container d-flex flex-column `}>
         Ces projets ne sont que quelques-uns parmi les plus significatifs que
