@@ -6,15 +6,17 @@
       "title": "Booki",
       "technologies": [
         {
+          "logo": "images/languages/html.svg",
           "nom": "HTML",
           "percent": "50%"
         },
         {
+          "logo": "images/languages/html.svg",
           "nom": "CSS",
           "percent": "50%"
         }
       ],
-      "pictures": "images/CV.pdf",
+      "pictures": "images/projet.Img/Booki",
       "specifications": [
         "Site Responsive",
         "Conformeà la maquette",
@@ -37,14 +39,27 @@
       "title": "ohmyfood",
       "technologies": [
         {
+          "logo": "images/languages/html.svg",
           "nom": "HTML",
           "percent": "50%"
         },
         {
+          "logo": "images/languages/html.svg",
+          "nom": "CSS",
+          "percent": "50%"
+        },
+        {
+          "logo": "images/languages/html.svg",
+          "nom": "CSS",
+          "percent": "50%"
+        },
+        {
+          "logo": "images/languages/html.svg",
           "nom": "CSS",
           "percent": "50%"
         }
       ],
+      "pictures": "images/projet.Img/Booki",
       "specifications": [
         "Site Responsive",
         "Conforme à la maquette",
@@ -71,14 +86,17 @@
       "title": "La panthère",
       "technologies": [
         {
+          "logo": "images/languages/html.svg",
           "nom": "HTML",
           "percent": "50%"
         },
         {
+          "logo": "images/languages/html.svg",
           "nom": "CSS",
           "percent": "50%"
         }
       ],
+      "pictures": "images/projet.Img/Booki",
       "specifications": [
         "Analyse de l'état actuel de SEO",
         "Recommandations d'améliorations du SEO du site",
@@ -104,14 +122,17 @@
       "title": "Kanap",
       "technologies": [
         {
+          "logo": "images/languages/html.svg",
           "nom": "HTML",
           "percent": "50%"
         },
         {
+          "logo": "images/languages/html.svg",
           "nom": "CSS",
           "percent": "50%"
         }
       ],
+      "pictures": "images/projet.Img/Booki",
       "specifications": [
         "Appels API",
         "Afficher les produits dynamiquement",
@@ -138,14 +159,17 @@
       "title": "Piiquante",
       "technologies": [
         {
+          "logo": "images/languages/html.svg",
           "nom": "HTML",
           "percent": "50%"
         },
         {
+          "logo": "images/languages/html.svg",
           "nom": "CSS",
           "percent": "50%"
         }
       ],
+      "pictures": "images/projet.Img/Booki",
       "specifications": [
         "Mettre en oeuvre des opérations CRUD de manière sécurisée",
         "Stocker des données de manière sécurisée"
@@ -161,14 +185,17 @@
       "title": "Kasa",
       "technologies": [
         {
+          "logo": "images/languages/html.svg",
           "nom": "HTML",
           "percent": "50%"
         },
         {
+          "logo": "images/languages/html.svg",
           "nom": "CSS",
           "percent": "50%"
         }
       ],
+      "pictures": "images/projet.Img/Booki",
       "specifications": [
         "Initialiser une application avec Create React App",
         "Utilisation des Hooks useState et useEffect",
@@ -192,14 +219,17 @@
       "title": "Johnny's return",
       "technologies": [
         {
+          "logo": "images/languages/html.svg",
           "nom": "HTML",
           "percent": "50%"
         },
         {
+          "logo": "images/languages/html.svg",
           "nom": "CSS",
           "percent": "50%"
         }
       ],
+      "pictures": "images/projet.Img/Booki",
       "specifications": [
         "Site Responsive",
         "Conforme à la maquette",
@@ -219,19 +249,22 @@
     },
 
     {
-      "id": "cv254nbh6",
+      "id": "qq971lod7",
       "type": "PERSONNEL",
       "title": "Blog",
       "technologies": [
         {
+          "logo": "images/languages/html.svg",
           "nom": "HTML",
           "percent": "50%"
         },
         {
+          "logo": "images/languages/html.svg",
           "nom": "CSS",
           "percent": "50%"
         }
       ],
+      "pictures": "images/projet.Img/Booki",
       "specifications": [
         "Site Responsive",
         "Conforme à la maquette",
