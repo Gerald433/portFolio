@@ -1,3 +1,74 @@
-h1 {
-  color: black;
+@use "../../assets/styles/mixins" as mixin;
+
+.titleProjet {
+  color: var(--white-100);
+  margin-top: 80px;
+  font-size: 157px;
+
+  @include mixin.lg-lt {
+    margin-top: 40px;
+    font-size: 96px;
+  }
+  @include mixin.sm-lt {
+    margin-top: 40px;
+    font-size: 48px;
+  }
+}
+
+.itemList {
+  gap: 20px;
+
+  .itemChildren {
+    color: var(--white-100);
+    justify-content: space-between;
+  }
+
+  .small {
+    margin-right: 30%;
+    width: 80%;
+
+    .logo {
+      color: white;
+
+      width: 50px;
+      height: 80px;
+    }
+    .techno {
+      color: white;
+      padding-left: 20px;
+    }
+  }
+
+  .big {
+    width: 100%;
+    margin-left: 30%;
+
+    .logo {
+      color: white;
+
+      width: 50px;
+      height: 80px;
+    }
+    .techno {
+      color: white;
+      padding-left: 20px;
+    }
+  }
+}
+
+.description,
+.specificationList {
+  font-family: GT Planar;
+  font-size: 36px;
+  color: var(--white-100);
+}
+
+.description {
+  max-width: 513px;
+  margin-top: 30px;
+  line-height: 158%;
+}
+
+.specificationList {
+  line-height: 217%;
 }
