@@ -4,9 +4,10 @@
   position: relative;
   width: 48%;
   height: 640px;
-  //   background-color: var(--white-84);
+    background-color: var(--white-84);
   border: 1px solid black;
   overflow: hidden;
+  text-decoration: none;
 
   @include mixin.md-lt {
     width: 100%;
