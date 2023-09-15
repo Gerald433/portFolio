@@ -4,7 +4,7 @@ import LinkFooter from "./LinkFooter";
 import linkLinkedin from "../assets/images/linkLinkedin.svg";
 import linkGithub from "../assets/images/linkGithub.svg";
 import { Link } from "react-router-dom";
-import cv from "../assets/images/CV.pdf";
+// import cv from "../assets/images/CV.pdf";
 import { useLocation } from "react-router-dom";
 
 function Footer() {
