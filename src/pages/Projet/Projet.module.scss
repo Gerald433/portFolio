@@ -1,8 +1,10 @@
 @use "../../assets/styles/mixins" as mixin;
 
-.titleProjet {
+.titleProjet,
+.titleSection {
+  text-align: center;
   color: var(--white-100);
-  margin-top: 80px;
+
   font-size: 157px;
 
   @include mixin.lg-lt {
@@ -14,33 +16,58 @@
     font-size: 48px;
   }
 }
+.titleProjet {
+  margin-top: 80px;
+}
+
+.boxLogos {
+  padding-top: 20px;
+  margin: auto;
+  width: 30%;
+  color: var(--white-100);
+  justify-content: center;
+  gap: 20px;
+}
 
 .itemList {
+  margin-top: 50px;
   gap: 20px;
 
   .itemChildren {
     color: var(--white-100);
     justify-content: space-between;
   }
+  .logoItemBox {
+    @include mixin.xs {
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
 
   .small {
     margin-right: 30%;
-    width: 80%;
+    max-width: 50%;
+    min-width: 200px;
 
     .logo {
       color: white;
 
       width: 50px;
-      height: 80px;
+      height: 50px;
     }
     .techno {
       color: white;
       padding-left: 20px;
+      @include mixin.xs {
+        padding-left: 0;
+      }
     }
   }
 
   .big {
-    width: 100%;
+    max-width: 100%;
     margin-left: 30%;
 
     .logo {
@@ -52,12 +79,47 @@
     .techno {
       color: white;
       padding-left: 20px;
+      @include mixin.xs {
+        padding-left: 0;
+      }
     }
   }
 }
 
+.titleSection {
+  margin-top: 150px;
+
+  @include mixin.sm-lt {
+    margin-top: 50px;
+  }
+}
+
+.middleBox {
+  margin-top: 100px;
+  max-width: 1200px;
+  justify-content: space-between;
+  width: 100%;
+
+  align-items: center;
+
+  @include mixin.lg-lt {
+    margin-top: 0px;
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+
+  .firstImg {
+    width: 100%;
+    display: block;
+    // @include mixin.lg-lt {
+    //   width: 100%;
+    // }
+  }
+}
+
 .description,
-.specificationList {
+.specificationList,
+.evaluation {
   font-family: GT Planar;
   font-size: 36px;
   color: var(--white-100);
@@ -65,10 +127,98 @@
 
 .description {
   max-width: 513px;
-  margin-top: 30px;
+  padding-top: 100px;
   line-height: 158%;
+
+  @include mixin.sm-lt {
+    font-size: 24px;
+  }
+  @include mixin.sm-lt {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.description,
+.secondImg {
+  margin: auto;
+}
+
+.hat2{
+  margin-top: 100px;
+  width: 100%;
+}
+
+.secondImg {
+  width: 100%;
+
+  display: block;
 }
 
 .specificationList {
+  display: flex;
+  flex-direction: column;
   line-height: 217%;
+  font-size: 36px;
+  gap: 20px;
+  width: 50%;
+  @include mixin.lg-lt {
+    padding-left: 20px;
+    font-size: 24px;
+    width: 100%;
+  }
+
+  @include mixin.xs {
+    padding-left: 20px;
+    font-size: 18px;
+  }
+
+  li {
+    min-width: 100%;
+    img {
+      margin-right: 20px;
+    }
+  }
+}
+
+.boxEvaluation {
+  margin-top: 150px;
+  margin-bottom: 350px;
+  border-radius: 0 18px 18px 18px;
+  padding: 100px;
+  background-color: var(--white-18);
+  @include mixin.sm-lt {
+    margin-top: 80px;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 0;
+  }
+}
+.evaluator {
+  color: var(--white-100);
+  font-size: 24px;
+}
+.evaluator,
+.evaluatorJob,
+.evaluatorDate {
+  display: block;
+
+  font-family: GT Planar;
+}
+
+.evaluatorJob,
+.evaluatorDate {
+  margin-top: 10px;
+  color: var(--white-77);
+  font-size: 20px;
+}
+
+.evaluation {
+  margin-top: 60px;
+  line-height: 158%;
+  font-size: 36px;
+  max-width: 552px;
+  @include mixin.sm-lt {
+    font-size: 24px;
+  }
 }
