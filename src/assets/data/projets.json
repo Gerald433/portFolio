@@ -6,17 +6,17 @@
       "title": "Booki",
       "technologies": [
         {
-          "logo": "images/languages/html.svg",
+          "logo": "/images/languages/logoHTML.svg",
           "nom": "HTML",
-          "percent": "50%"
+          "percent": "52%"
         },
         {
-          "logo": "images/languages/html.svg",
+          "logo": "/images/languages/logoCSS.svg",
           "nom": "CSS",
-          "percent": "50%"
+          "percent": "48%"
         }
       ],
-      "pictures": "images/projet.Img/Booki",
+      "pictures": "/images/projetImg/Booki.svg",
       "specifications": [
         "Site Responsive",
         "Conformeà la maquette",
@@ -39,32 +39,23 @@
       "title": "ohmyfood",
       "technologies": [
         {
-          "logo": "images/languages/html.svg",
+          "logo": "/images/languages/logoHTML.svg",
           "nom": "HTML",
-          "percent": "50%"
+          "percent": "62.4%"
         },
         {
-          "logo": "images/languages/html.svg",
+          "logo": "/images/languages/logoCSS.svg",
           "nom": "CSS",
-          "percent": "50%"
-        },
-        {
-          "logo": "images/languages/html.svg",
-          "nom": "CSS",
-          "percent": "50%"
-        },
-        {
-          "logo": "images/languages/html.svg",
-          "nom": "CSS",
-          "percent": "50%"
+          "percent": "37.6%"
         }
       ],
-      "pictures": "images/projet.Img/Booki",
+      "pictures1": "/images/projetImg/ohMyFood/ohMyFood1.jpg",
+      "pictures2": "/images/projetImg/ohMyFood/ohMyFood2.jpg",
       "specifications": [
         "Site Responsive",
         "Conforme à la maquette",
         "Interactivité visuelle",
-        "animations css avancées conformes à la maquette",
+        "animations css avancées",
         "Gestion des images selon l'affichage",
         "Navigation via les ancres",
         "Cartes cliquables",
@@ -76,7 +67,7 @@
       "evaluation": "Le code des livrables est très clair, bien indenté et les blocs principaux sont clairement repérables sur les pages.\n\nL'utilisation des bonnes balises sémantiques est aussi un point fort à noter.\n\nAxes d'amélioration :\n\nUne utilisation de Sass serait très bien pour compléter la compréhension du langage de styles.\n\nRemarques :\n\nRAS. Expression orale irréprochable, tenue correcte.",
       "display": "yes",
       "position": "1",
-      "instrument": "images/white-Phone.svg",
+      "instrument": "/images/white-Phone.svg",
       "textAlt": "Telephone blanc"
     },
 
@@ -86,12 +77,12 @@
       "title": "La panthère",
       "technologies": [
         {
-          "logo": "images/languages/html.svg",
+          "logo": "/images/languages/logoHTML.svg",
           "nom": "HTML",
           "percent": "50%"
         },
         {
-          "logo": "images/languages/html.svg",
+          "logo": "/images/languages/logoCSS.svg",
           "nom": "CSS",
           "percent": "50%"
         }
@@ -122,14 +113,19 @@
       "title": "Kanap",
       "technologies": [
         {
-          "logo": "images/languages/html.svg",
+          "logo": "/images/languages/logoHTML.svg",
           "nom": "HTML",
-          "percent": "50%"
+          "percent": "30.4%"
         },
         {
-          "logo": "images/languages/html.svg",
+          "logo": "/images/languages/logoCSS.svg",
           "nom": "CSS",
-          "percent": "50%"
+          "percent": "17.4%"
+        },
+        {
+          "logo": "/images/languages/logoJS.svg",
+          "nom": "JavaScript",
+          "percent": "52.2%"
         }
       ],
       "pictures": "images/projet.Img/Booki",
@@ -159,12 +155,12 @@
       "title": "Piiquante",
       "technologies": [
         {
-          "logo": "images/languages/html.svg",
+          "logo": "/images/languages/logoHTML.svg",
           "nom": "HTML",
           "percent": "50%"
         },
         {
-          "logo": "images/languages/html.svg",
+          "logo": "/images/languages/logoCSS.svg",
           "nom": "CSS",
           "percent": "50%"
         }
@@ -185,17 +181,28 @@
       "title": "Kasa",
       "technologies": [
         {
-          "logo": "images/languages/html.svg",
+          "logo": "/images/languages/logoHTML.svg",
           "nom": "HTML",
-          "percent": "50%"
+          "percent": "5.6%"
         },
         {
-          "logo": "images/languages/html.svg",
+          "logo": "/images/languages/logoCSS.svg",
           "nom": "CSS",
+          "percent": "52.3%"
+        },
+        {
+          "logo": "/images/languages/logoJS.svg",
+          "nom": "JavaScript",
+          "percent": "42.1%"
+        },
+        {
+          "logo": "/images/languages/logoREACT.svg",
+          "nom": "React",
           "percent": "50%"
         }
       ],
-      "pictures": "images/projet.Img/Booki",
+      "pictures1": "/images/projetImg/kasa/kasa1.jpg",
+      "pictures2": "/images/projetImg/kasa/kasa2.jpg",
       "specifications": [
         "Initialiser une application avec Create React App",
         "Utilisation des Hooks useState et useEffect",
@@ -219,12 +226,12 @@
       "title": "Johnny's return",
       "technologies": [
         {
-          "logo": "images/languages/html.svg",
+          "logo": "/images/languages/logoHTML.svg",
           "nom": "HTML",
           "percent": "50%"
         },
         {
-          "logo": "images/languages/html.svg",
+          "logo": "/images/languages/logoCSS.svg",
           "nom": "CSS",
           "percent": "50%"
         }
@@ -254,12 +261,12 @@
       "title": "Blog",
       "technologies": [
         {
-          "logo": "images/languages/html.svg",
+          "logo": "/images/languages/logoHTML.svg",
           "nom": "HTML",
           "percent": "50%"
         },
         {
-          "logo": "images/languages/html.svg",
+          "logo": "/images/languages/logoCSS.svg",
           "nom": "CSS",
           "percent": "50%"
         }
