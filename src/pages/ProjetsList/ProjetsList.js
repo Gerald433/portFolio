@@ -61,6 +61,7 @@ const ProjetsList = function () {
         {projetsPersoOnDisplay.map((projet, index) => (
           <ProjectBox
             key={projet.id}
+            projetId={projet.id}
             type={projet.type}
             title={projet.title}
             src={projet.instrument}
