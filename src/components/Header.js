@@ -13,6 +13,10 @@ function Header() {
     setMenuVisible(!menuVisible);
   }
 
+  function closeMenu() {
+    setMenuVisible(false);
+  }
+
   if (!matchARoute(location.pathname)) return null;
 
 
@@ -91,6 +95,7 @@ function Header() {
                   (location.pathname === "/" ? ` ${styles.linkActive}` : "")
                 }
                 to="/"
+                onClick={closeMenu}
               >
                 Projets
               </Link>
@@ -104,6 +109,7 @@ function Header() {
                     : "")
                 }
                 to="/a-propos"
+                onClick={closeMenu}
               >
                 À propos
               </Link>
@@ -117,6 +123,7 @@ function Header() {
                     : "")
                 }
                 to="/contact"
+                onClick={closeMenu}
               >
                 Contact
               </Link>
