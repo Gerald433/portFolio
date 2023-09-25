@@ -76,7 +76,11 @@ function Projet() {
             <ul className={`${styles.specificationList}`}>
               {projet.specifications.map((specific, index) => (
                 <li key={index}>
-                  <img className={`${styles.checkList}`} src={logoListItem} alt="logo de list" />
+                  <img
+                    className={`${styles.checkList}`}
+                    src={logoListItem}
+                    alt="logo de list"
+                  />
                   {specific}
                 </li>
               ))}
@@ -109,8 +113,6 @@ function Projet() {
             <p className={`${styles.evaluation} `}>{projet.evaluation}</p>
           </div>
         </section>
-
-        <Link to="/">liste de projets</Link>
       </div>
     </>
   );
