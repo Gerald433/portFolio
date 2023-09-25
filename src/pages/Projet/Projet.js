@@ -65,7 +65,7 @@ function Projet() {
           </div>
 
           <div className={`${styles.middleBox} container d-flex `}>
-            <div className={`${styles.boxPicture1} `}>
+            <div className={`${styles.boxPicture1} d-flex `}>
               <img className={`${styles.hat}`} src={hat} alt="entete" />
               <img
                 className={`${styles.firstImg}`}
@@ -76,7 +76,7 @@ function Projet() {
             <ul className={`${styles.specificationList}`}>
               {projet.specifications.map((specific, index) => (
                 <li key={index}>
-                  <img src={logoListItem} alt="logo de list" />
+                  <img className={`${styles.checkList}`} src={logoListItem} alt="logo de list" />
                   {specific}
                 </li>
               ))}
@@ -85,7 +85,7 @@ function Projet() {
           </div>
 
           <p className={`${styles.description} `}>{projet.description}</p>
-          <div className={`${styles.boxPicture2} `}>
+          <div className={`${styles.boxPicture2} d-flex`}>
             <img className={`${styles.hat2}`} src={hat2} alt="entete" />
             <img
               className={`${styles.secondImg}`}
