@@ -87,7 +87,8 @@
           "percent": "50%"
         }
       ],
-      "pictures": "images/projet.Img/Booki",
+      "pictures1": "/images/projetImg/panthere/image58.jpg",
+      "pictures2": "/images/projetImg/panthere/image57.jpg",
       "specifications": [
         "Analyse de l'état actuel de SEO",
         "Recommandations d'améliorations du SEO du site",
@@ -128,7 +129,8 @@
           "percent": "52.2%"
         }
       ],
-      "pictures": "images/projet.Img/Booki",
+      "pictures1": "/images/projetImg/kanap/image56.jpg",
+      "pictures2": "/images/projetImg/kanap/image55.jpg",
       "specifications": [
         "Appels API",
         "Afficher les produits dynamiquement",
