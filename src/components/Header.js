@@ -2,6 +2,7 @@ import styles from "./Header.module.scss";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import React, { useState } from "react";
+import { matchARoute } from '../routes';
 
 function Header() {
   const location = useLocation();
@@ -12,15 +13,8 @@ function Header() {
     setMenuVisible(!menuVisible);
   }
 
-  const isOnErrorPage = location.pathname !== "/" &&
-  location.pathname !== "/projets/:projetId" &&
-  location.pathname !== "/a-propos" &&
-  location.pathname !== "/contact"; 
+  if (!matchARoute(location.pathname)) return null;
 
-  
-  if (isOnErrorPage) {
-    return null; // Ne pas rendre le header sur la page d'erreur
-  }
 
 
   return (

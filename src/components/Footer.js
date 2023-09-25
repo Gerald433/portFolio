@@ -6,19 +6,12 @@ import linkGithub from "../assets/images/linkGithub.svg";
 import { Link } from "react-router-dom";
 // import cv from "../assets/images/CV.pdf";
 import { useLocation } from "react-router-dom";
+import { matchARoute } from "../routes";
 
 function Footer() {
   const location = useLocation();
-  const isOnErrorPage =
-    location.pathname !== "/" &&
-    location.pathname !== "/projets/:projetId" &&
-    location.pathname !== "/a-propos" &&
-    location.pathname !== "/contact";
 
-  if (isOnErrorPage) {
-    return null; // Ne pas rendre le header sur la page d'erreur
-  }
-
+  if (!matchARoute(location.pathname)) return null;
   return (
     <footer className={`${styles.footer}`}>
       <div className={`${styles.container} container d-flex`}>

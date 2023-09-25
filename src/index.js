@@ -11,6 +11,7 @@ import Projet from "./pages/Projet/Projet";
 import Error from "./pages/Error/Error";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import { routes } from "./routes";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -22,6 +23,9 @@ root.render(
         <Route path="/projets/:projetId" element={<Projet />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/a-propos" element={<Apropos />} />
+        {routes.map((route, i) => (
+          <Route key={i} path={route.path} element={route.element} />
+        ))}
         <Route path="*" element={<Error />} />
       </Routes>
     </main>
