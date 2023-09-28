@@ -2,9 +2,26 @@
   box-sizing: border-box;
 }
 
+
+@font-face {
+  font-family: 'Acorn';
+  src: url('../fonts/ACORN-MEDIUM.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT';
+  src: url('../fonts/GT.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
 body {
   margin: auto;
-  font-family: "Acorn Medium", sans-serif;
+  font-family: "Acorn", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -14,6 +31,7 @@ h2,
 h3,
 h4,
 p {
+  font-family: Acorn;
   margin: 0;
 }
 
