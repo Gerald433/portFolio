@@ -2,7 +2,7 @@ import styles from "./Header.module.scss";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import React, { useState } from "react";
-import { matchARoute } from '../routes';
+import { matchARoute } from "../routes";
 
 function Header() {
   const location = useLocation();
@@ -18,8 +18,6 @@ function Header() {
   }
 
   if (!matchARoute(location.pathname)) return null;
-
-
 
   return (
     <header className={`${styles.header}`}>
