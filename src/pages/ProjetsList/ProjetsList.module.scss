@@ -2,6 +2,9 @@
 
 .top {
   color: var(--white-100);
+  text-align: center;
+  padding: 20px;
+  padding-right: 20px;
 
   .titlePrincipal {
     margin-top: 80px;
@@ -13,7 +16,7 @@
       margin-top: 40px;
       font-size: 96px;
     }
-    @include mixin.sm-lt {
+    @include mixin.xs {
       margin-top: 40px;
       font-size: 48px;
     }
@@ -41,16 +44,16 @@
   }
 
   .specialisation {
-    font-family: Acorn ExtraLight;
+    font-family: Acorn extralight;
     @include mixin.sm-lt {
       font-size: 34px;
-      font-family: Acorn;
+    
     }
   }
 
   .indications {
     font-size: 28px;
-    font-family: gt planar;
+    font-family: GT planar;
     color: var(--white-66);
     max-width: 718px;
     // color: var(--white-66);
@@ -77,6 +80,9 @@
   flex-wrap: wrap;
   gap: 20px;
 
+  @include mixin.md-lt {
+   gap: 0;
+  }
 
   .dark {
     background-color: var(--white-0);

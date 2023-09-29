@@ -20,12 +20,11 @@ const ProjetsList = function () {
   return (
     <>
       <div className={`${styles.top} container d-flex flex-column `}>
-        <h1 className={`${styles.titlePrincipal} `}>I'm gérald g.</h1>
+        
+        <h1 className={`${styles.titlePrincipal} `}>I'm <br />gerald g.</h1>
         {console.log("salut")}
-        <span className={`${styles.job} br`}>Développeur Web Front-end,</span>
-        <span className={`${styles.specialisation} br`}>
-          JavaScript - React.
-        </span>
+        <span className={`${styles.job} `}>Developpeur Web Front-end,</span>
+        <span className={`${styles.specialisation} `}>JavaScript - React.</span>
         <p className={`${styles.indications} `}>
           Explorez ci-dessous quelques exemples de mes réalisations, illustrant
           mon intéret pour le développement de solutions digitale pertinantes
@@ -33,10 +32,10 @@ const ProjetsList = function () {
       </div>
 
       <div
-        className={`${styles.presentationInFour} container d-flex justify-content-center align-items-center `}
+        className={`${styles.presentationInFour} container d-flex justify-content-center align-items-center br`}
       >
         {projetsOnDisplay.map((projet, index) => (
-          <ProjectBox
+          <ProjectBox 
             key={projet.id}
             projetId={projet.id}
             type={projet.type}
