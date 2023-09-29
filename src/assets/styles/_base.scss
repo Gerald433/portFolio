@@ -2,22 +2,26 @@
   box-sizing: border-box;
 }
 
-
 @font-face {
-  font-family: 'Acorn';
-  src: url('../fonts/ACORN-MEDIUM.TTF') format('truetype');
+  font-family: "Acorn";
+  src: url("../fonts/ACORN-SEMIBOLD.TTF") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'GT';
-  src: url('../fonts/GT.TTF') format('truetype');
+  font-family: "Acorn extralight";
+  src: url("../fonts/ACORN-EXTRALIGHT.TTF") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
-
+@font-face {
+  font-family: "GT Planar";
+  src: url("../fonts/GT.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   margin: auto;
