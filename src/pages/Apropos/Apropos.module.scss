@@ -15,8 +15,8 @@
       margin-top: 40px;
       font-size: 96px;
     }
-    @include mixin.sm-lt {
-      margin-top: 40px;
+    @include mixin.xs {
+      margin-top: 60px;
       font-size: 48px;
     }
   }
@@ -40,6 +40,10 @@
 
     @include mixin.sm-lt {
       width: 90%;
+    }
+
+    @include mixin.xs {
+      margin-top: 40px;
     }
 
     .avatar {
@@ -75,7 +79,6 @@
       font-family: Acorn ExtraLight;
       @include mixin.sm-lt {
         font-size: 34px;
-        font-family: Acorn;
       }
     }
 
@@ -253,6 +256,12 @@
     @include mixin.lg-lt {
       flex-direction: column;
     }
+
+    .unitLogosOutils {
+      @include mixin.lg-lt {
+        margin-top: 50px;
+      }
+    }
   }
 
   .titleCompetence {
@@ -264,29 +273,56 @@
     font-size: 20px;
     font-family: GT Planar;
     color: var(--white-66);
-    padding-top: 30px;
+    padding-top: 15px;
     line-height: 158%;
   }
 
   .textCompetence {
     padding-right: 50px;
+
+    @include mixin.xs {
+      padding-top: 10px;
+    }
+  }
+
+  .firstPart {
+    width: 40%;
+    padding-top: 30px;
+    align-items: center;
+    gap: 200px;
+
+    @include mixin.lg-lt {
+      width: 100%;
+      justify-content: space-between;
+      padding-right: 60px;
+    }
+
+    @include mixin.xs {
+      padding-top: 50px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0;
+    }
+  }
+
+  .firstColumn {
+    width: 100px;
+
+    .unitLogosCompetence {
+      text-align: start;
+      margin-bottom: 10px;
+    }
   }
 
   .logosCompetence,
   .logosOutils {
     max-width: 500px;
     flex-wrap: wrap;
-    gap: 5px 100px;
-
-    .logosOutils {
-      gap: 100px;
-    }
+    padding-top: 30px;
+    align-items: flex-start;
 
     .unitLogosCompetence,
     .unitLogosOutil {
-      width: 190px;
-      height: 100px;
-      // height: 50px;
       text-align: start;
       margin-bottom: 10px;
     }
@@ -298,6 +334,7 @@
     justify-content: space-between;
     @include mixin.lg-lt {
       flex-direction: column;
+      gap: 50px;
     }
 
     .finalCompetence {
@@ -309,7 +346,7 @@
 
     .browseProjet {
       max-width: 296px;
-
+      text-decoration: none;
       padding-left: 50px;
       padding-right: 50px;
       border-style: none;
@@ -317,14 +354,28 @@
       // max-width: 259px;
       height: 58px;
       border-radius: 50px;
-      color: white;
+
       background-color: var(--primary);
-      font-size: 20px;
-      font-family: GT Planar;
+
       align-items: center;
+      cursor: pointer;
 
       @include mixin.lg-lt {
         margin-top: 0;
+      }
+
+      button {
+        background: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+        font-size: 20px;
+        font-family: GT Planar;
+        color: white;
+
+        cursor: pointer;
+        outline: none; /* Supprime la bordure lorsqu'il est en focus */
+        /* Autres styles personnalisés que vous souhaitez ajouter */
       }
     }
   }

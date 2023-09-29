@@ -1,4 +1,5 @@
 import styles from "./Apropos.module.scss";
+import { Link } from "react-router-dom";
 import avatar from "../../assets/images/Avatar.svg";
 import Item from "../../components/Item";
 import mongo from "../../assets/images/languages/mongo.svg";
@@ -16,7 +17,7 @@ import postman from "../../assets/images/outils/postman.svg";
 import eglise from "../../assets/images/local/eglise.jpg";
 import blueLac from "../../assets/images/local/blueLac.jpg";
 import horizon from "../../assets/images/local/horizon.jpg";
-import logoReact from "../../assets/images/languages/logoReact.svg";
+import logoReact from "../../assets/images/languages/logoREACT copy.svg";
 import typeScriptLogo from "../../assets/images/languages/logoTypeScript.svg";
 
 function Apropos() {
@@ -33,7 +34,7 @@ function Apropos() {
             />
             <div className={`${styles.blocText}  d-flex flex-column `}>
               <span className={`${styles.job} `}>
-                Développeur Web Front-end,
+                Developpeur Web Front-end,
               </span>
               <span className={`${styles.specialisation} `}>
                 JavaScript - React.
@@ -97,50 +98,57 @@ function Apropos() {
                 Une introduction aux langages de développement que j'utilise
                 pour créer des solutions numériques de qualité.
               </p>
-              <div className={`${styles.logosCompetence} d-flex `}>
-                <img
-                  className={`${styles.unitLogosCompetence}`}
-                  src={mongo}
-                  alt="logo mongo"
-                />
-                <img
-                  className={`${styles.unitLogosCompetence}`}
-                  src={node}
-                  alt="logo node"
-                />
-                <img
-                  className={`${styles.unitLogosCompetence}`}
-                  src={react}
-                  alt="logo react"
-                />
-                <img
-                  className={`${styles.unitLogosCompetence}`}
-                  src={html}
-                  alt="logo html"
-                />
-                <img
-                  className={`${styles.unitLogosCompetence}`}
-                  src={sass}
-                  alt="logo sass"
-                />
-                <img
-                  className={`${styles.unitLogosCompetence}`}
-                  src={css}
-                  alt="logo css"
-                />
-                <img
-                  className={`${styles.unitLogosCompetence}`}
-                  src={javascript}
-                  alt="logo javascript"
-                />
-                <img
-                  className={`${styles.unitLogosCompetence}`}
-                  src={typescript}
-                  alt="logo typescript"
-                />
+              <div className={`${styles.firstPart} d-flex `}>
+                <div className={`${styles.firstColumn} flex-column`}>
+                  <img
+                    className={`${styles.unitLogosCompetence}`}
+                    src={mongo}
+                    alt="logo mongo"
+                  />
+                  <img
+                    className={`${styles.unitLogosCompetence}`}
+                    src={react}
+                    alt="logo react"
+                  />
+                  <img
+                    className={`${styles.unitLogosCompetence}`}
+                    src={sass}
+                    alt="logo sass"
+                  />
+                  <img
+                    className={`${styles.unitLogosCompetence}`}
+                    src={javascript}
+                    alt="logo javascript"
+                  />
+                </div>
+
+                <div className={`${styles.firstColumn} flex-column `}>
+                  <img
+                    className={`${styles.unitLogosCompetence}`}
+                    src={node}
+                    alt="logo node"
+                  />
+                  <img
+                    className={`${styles.unitLogosCompetence}`}
+                    src={html}
+                    alt="logo html"
+                  />
+
+                  <img
+                    className={`${styles.unitLogosCompetence}`}
+                    src={css}
+                    alt="logo css"
+                  />
+
+                  <img
+                    className={`${styles.unitLogosCompetence}`}
+                    src={typescript}
+                    alt="logo typescript"
+                  />
+                </div>
               </div>
             </div>
-            <div>
+            <div className={`${styles.unitLogosOutils}`}>
               <span className={`${styles.titleCompetence} `}>Outils</span>
               <p className={`${styles.textOutil} `}>
                 Les outils clés de mon processus créatif.
@@ -178,9 +186,12 @@ function Apropos() {
               nouvelles technologies, enrichissant ma curiosité et mon désir
               d'apprentissage.
             </p>
-            <button className={`${styles.browseProjet} d-flex `}>
-              Parcourir mes projets
-            </button>
+            <Link className={`${styles.browseProjet} d-flex `} to="/">
+              <button >
+                Parcourir mes projets
+              </button>
+            </Link>
+           
           </div>
         </div>
 
@@ -200,7 +211,7 @@ function Apropos() {
         <div className={`${styles.brik}  d-flex`}>
           <div className={`${styles.styleBrik} ${styles.middleGrow}`}>
             <span className={`${styles.number}`}>01.</span>
-            <h3 className={`${styles.titleBrik}`}>Créer</h3>
+            <h3 className={`${styles.titleBrik}`}>Creer</h3>
             <p className={`${styles.textBrik}`}>
               Créer, imaginer et façonner des expériences web captivantes et
               fonctionnelles en réponse à vos besoins est un défi permanent.
