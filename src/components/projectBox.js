@@ -8,7 +8,7 @@ function ProjectBox({ src, className, title, description, textAlt, type, projetI
       >
         <span className={`${styles.formation}`}>{type}</span>
         <h2
-          className={`${styles.title} d-flex flex-column justify-content-center`}
+          className={`${styles.title} d-flex flex-column justify-content-center `}
         >
           {title}
         </h2>
