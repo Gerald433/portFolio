@@ -3,7 +3,8 @@
 .box {
   position: relative;
   width: 48%;
-  height: 640px;
+  height: 100%;
+  aspect-ratio: 1/1;
     background-color: var(--white-84);
   border: 1px solid black;
   overflow: hidden;
@@ -34,7 +35,7 @@
 
   .phoneBlack {
     padding-top: 50px;
-
+    object-fit: cover;
     @include mixin.xs {
       // padding-top: 50px;
       width: 70%;
