@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./Contact.module.scss";
-import vector from "../../assets/images/Vector.svg"
-
+import vector from "../../assets/images/Vector.svg";
 
 // function checkNameFirstName(){
 //   let errorMessageFirstName = document.getElementById("firstNameErrorMsg")
@@ -23,16 +22,7 @@ import vector from "../../assets/images/Vector.svg"
 //   }
 // }
 
-
-
-
-
-
-
-
 function Contact() {
-
-  
   return (
     <div className={`${styles.major} d-flex flex-column`}>
       <div
@@ -51,10 +41,12 @@ function Contact() {
           <h2 className={`${styles.formTitle}  d-flex `}>
             Envoyez moi un message
           </h2>
-          <p className={`${styles.info}`}>J'y répondrai dans les meilleurs délais</p>
+          <p className={`${styles.info}`}>
+            J'y repondrai dans les meilleurs delais
+          </p>
           <form action="">
             <div className={`${styles.formSection}`}>
-              <label htmlFor="nameInput">Nom et prénom</label>
+              <label htmlFor="nameInput">Nom et prenom</label>
               <br />
               <input type="text" />
             </div>
@@ -77,8 +69,13 @@ function Contact() {
               <input type="text" />
             </div>
 
-            <button>Envoyer
-              <img className={`${styles.vector}`} src={vector} alt="icone d'envoi de message" />
+            <button>
+              Envoyer
+              <img
+                className={`${styles.vector}`}
+                src={vector}
+                alt="icone d'envoi de message"
+              />
             </button>
           </form>
         </div>
