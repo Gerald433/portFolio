@@ -1,7 +1,6 @@
 import styles from "./ProjetsList.module.scss";
 import React from "react";
-import { useEffect, useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+
 import ProjectBox from "../../components/projectBox";
 // import blackPhone from "../../assets/images/black-phone.svg";
 // import whitePhone from "../../assets/images/white-phone.svg";
