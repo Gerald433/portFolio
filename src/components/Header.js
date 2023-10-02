@@ -80,10 +80,14 @@ function Header() {
           </span>
         </div>
 
-        <button
-          className={`${styles.menuMobile}`}
+        <div
+          className={`${styles.menuMobile} ${
+            menuVisible ? styles.clicked : ""
+          }`}
           onClick={toggleMenu}
-        ></button>
+        >
+          <span className={`${styles.bar}`}></span>
+        </div>
         <div className={`${menuVisible ? styles.menuVisible : "hidden"}`}>
           <ul className={`${styles.listMenuMobile} d-flex flex-column`}>
             <li>

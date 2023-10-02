@@ -80,43 +80,75 @@
     display: none;
     min-width: 16px;
     // position: absolute;
-    transform: translateY(-50%);
+
     top: 50%;
     right: 50px;
     z-index: 3;
 
     @include mixin.xs {
       background-color: unset;
-      border-left: none;
-      border-right: none;
-      display: flex;
-      border-top: var(--white-100) 1px solid;
-      border-bottom: var(--white-100) 1px solid;
-      width: 1px;
-      height: 9px;
-      color: transparent;
-      cursor: pointer;
-    }
-  }
-  .menuVisible {
-    display: none;
 
-    @include mixin.xs {
-      z-index: 2;
-      height: 100%;
-      padding: 50px;
       display: flex;
-      position: fixed;
-      inset: 0;
-      display: flex;
-      flex-direction: column;
-      font-family: gt planar;
-      color: var(--white-100);
-      background-color: var(--white-12);
+
+      height: 9px;
+
+      cursor: pointer;
+
+      transition: transform 0.3s ease;
+
+      .bar {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 1px;
+        background-color: transparent;
+      }
+      .bar::before,
+      .bar::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 1px;
+        left: 0;
+        background-color: var(--white-100);
+        transition: transform 0.3s ease;
+      }
+      .bar::before {
+        transform: translateY(-5px);
+      }
+      .bar::after {
+        transform: translateY(5px);
+      }
+
+      &.clicked {
+        .bar::before {
+          transform: rotate(45deg);
+        }
+        .bar::after {
+          transform: rotate(-45deg);
+        }
+      }
     }
   }
-  .listMenuMobile {
-    gap: 15px;
-    font-size: 32px;
+}
+.menuVisible {
+  display: none;
+
+  @include mixin.xs {
+    z-index: 2;
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    position: fixed;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: gt planar;
+    color: var(--white-100);
+    background-color: var(--white-12);
   }
+}
+.listMenuMobile {
+  gap: 15px;
+  font-size: 32px;
 }
