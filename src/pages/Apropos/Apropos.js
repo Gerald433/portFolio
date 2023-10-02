@@ -54,7 +54,7 @@ function Apropos() {
           <div className={`${styles.one} d-flex `}>
             <Item className={`${styles.itemChildren}  ${styles.small} d-flex `}>
               <span className={`${styles.left}`}>Projets réalisés</span>
-              <span className={`${styles.rightbloc}`}>25</span>
+              <span className={`${styles.rightbloc}`}>10</span>
             </Item>
 
             <Item className={`${styles.itemChildren} ${styles.big} d-flex `}>
@@ -187,11 +187,8 @@ function Apropos() {
               d'apprentissage.
             </p>
             <Link className={`${styles.browseProjet} d-flex `} to="/">
-              <button >
-                Parcourir mes projets
-              </button>
+              <button>Parcourir mes projets</button>
             </Link>
-           
           </div>
         </div>
 
