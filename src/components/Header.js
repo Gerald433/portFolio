@@ -1,7 +1,7 @@
 import styles from "./Header.module.scss";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { matchARoute } from "../routes";
 
 function Header() {
@@ -20,7 +20,7 @@ function Header() {
   if (!matchARoute(location.pathname)) return null;
 
   return (
-    <header className={`${styles.header}`}>
+    <header className={`${styles.header} `}>
       <div className={`${styles.container} container d-flex`}>
         <div className="d-flex flex-fill ">
           <span className={`${styles.icon} d-flex align-items-center`}>

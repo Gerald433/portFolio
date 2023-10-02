@@ -3,12 +3,19 @@
 .header {
   color: var(--white-50);
 
-  background-color: var(--white-12);
-  opacity: 0.93;
+  background: rgba(0, 0, 0, 0.5); // Arrière-plan semi-transparent
+  backdrop-filter: blur(10px); // Applique le flou
+  // background-color: var(--white-12);
+
   border-bottom: solid var(--white-50) 1px;
   z-index: 11;
   position: fixed;
   width: 100%;
+
+  .headerBlur {
+    backdrop-filter: blur(12px);
+    background-color: rgba(255, 255, 255, 0.5);
+  }
 
   .nav {
     width: 100%;
