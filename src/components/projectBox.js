@@ -1,10 +1,19 @@
 import styles from "./projectBox.module.scss";
 import { Link } from "react-router-dom";
-function ProjectBox({ src, className, title, description, textAlt, type, projetId }) {
+function ProjectBox({
+  src,
+  className,
+  title,
+  description,
+  textAlt,
+  type,
+  projetId,
+}) {
   return (
     <>
       <Link
-       to={`/projets/${projetId}`} className={`${styles.box} ${className} d-flex flex-column  align-items-center`}
+        to={`/projets/${projetId}`}
+        className={`${styles.box} ${className} d-flex flex-column  align-items-center`}
       >
         <span className={`${styles.formation}`}>{type}</span>
         <h2
