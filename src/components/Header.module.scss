@@ -5,6 +5,9 @@
 
   background-color: var(--white-12);
   border-bottom: solid var(--white-50) 1px;
+  z-index: 11;
+  position: fixed;
+  width: 100%;
 
   .nav {
     width: 100%;
@@ -63,7 +66,7 @@
         background-color: var(--white-18);
         border-radius: 0 50px 50px 50px;
         justify-content: center;
-        border: var(--white-0) 1px solid;
+        // border: var(--white-0) 1px solid;
       }
 
       &:hover {
@@ -75,7 +78,7 @@
   .menuMobile {
     display: none;
     min-width: 16px;
-    position: absolute;
+    // position: absolute;
     transform: translateY(-50%);
     top: 50%;
     right: 50px;
