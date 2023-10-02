@@ -8,15 +8,15 @@
   }
 
   .titlePrincipal {
-    margin-top: 80px;
+    margin-top: 150px;
     font-size: 157px;
 
     @include mixin.lg-lt {
-      margin-top: 40px;
+      margin-top: 110px;
       font-size: 96px;
     }
     @include mixin.xs {
-      margin-top: 60px;
+      margin-top: 130px;
       font-size: 48px;
     }
   }
@@ -293,7 +293,6 @@
 
     @include mixin.lg-lt {
       width: 100%;
-      justify-content: space-between;
       padding-right: 60px;
     }
 

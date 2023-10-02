@@ -7,17 +7,17 @@
   padding-right: 20px;
 
   .titlePrincipal {
-    margin-top: 80px;
+    margin-top: 150px;
     font-size: 157px;
 
 
 
     @include mixin.lg-lt {
-      margin-top: 40px;
+      margin-top: 110px;
       font-size: 96px;
     }
     @include mixin.xs {
-      margin-top: 40px;
+  
       font-size: 48px;
     }
   }
