@@ -21,10 +21,16 @@ function Footer() {
             <ul>
               <p className={`${styles.titleLink}`}>Réseaux</p>
               <li>
-                <Link to="https://github.com/Gerald433">Github</Link>
+                <Link to="https://github.com/Gerald433"
+                target="_blank"
+                rel="noopener noreferrer">
+                  Github</Link>
               </li>
               <li>
-                <Link to="https://www.linkedin.com/in/g%C3%A9rald-gaillard-218664277/">
+                <Link 
+                to="https://www.linkedin.com/in/g%C3%A9rald-gaillard-218664277/"
+                target="_blank"
+                rel="noopener noreferrer">
                   Linkedin
                 </Link>
               </li>
@@ -54,6 +60,7 @@ function Footer() {
           <LinkFooter
             src={linkLinkedin}
             href={"https://www.linkedin.com/in/g%C3%A9rald-gaillard-218664277/"}
+            
           />
           <LinkFooter src={linkGithub} href={"https://github.com/Gerald433"} />
           <LinkFooter src={linkLetter} href={"/contact"} />
