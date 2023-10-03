@@ -160,23 +160,13 @@
     flex-direction: column;
     font-family: gt planar;
     color: var(--white-100);
-  
   }
-  
 
   .listMenuMobile {
     gap: 15px;
     font-size: 32px;
     animation: slideDown 0.5s ease-in-out;
   }
-  .listMenu li{
-    opacity: 0; /* Par défaut, les éléments sont invisibles */
-  transform: translateY(-20px); /* Déplace les éléments vers le haut */
-  // transition: opacity 0.1s ease, transform 0.5s ease;
-  }
-
-
-
 }
 .menuOpen {
   background-color: var(--white-12);
@@ -188,5 +178,17 @@
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+.menuClose {
+  animation: slideUp 0.5s ease-in-out;
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
   }
 }

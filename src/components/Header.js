@@ -7,19 +7,14 @@ import { matchARoute } from "../routes";
 function Header() {
   const location = useLocation();
 
-  const [menuOpen, setMenuOpen] = useState(false);
-  
-
   const [menuVisible, setMenuVisible] = useState(false);
 
   function toggleMenu() {
     setMenuVisible(!menuVisible);
-    setMenuOpen(!menuOpen);
   }
 
   function closeMenu() {
     setMenuVisible(false);
-    setMenuOpen(false);
   }
 
   if (!matchARoute(location.pathname)) return null;
@@ -94,15 +89,12 @@ function Header() {
           <span className={`${styles.bar}`}></span>
         </div>
         <div
-      
-      className={`${styles.menuVisible} ${
-        menuVisible ? styles.menuOpen : "hidden"
-        
-      }`}
-      // onTransitionEnd={closeMenu}
-    ></div>
+          className={`${styles.menuVisible} ${
+            menuVisible ? styles.menuOpen : styles.menuClose
+          }`}
+          onTransitionEnd={closeMenu}
+        ></div>
         <div className={`${menuVisible ? styles.menuVisible : "hidden"}`}>
-          
           <ul className={`${styles.listMenuMobile} d-flex flex-column`}>
             <li>
               <Link
