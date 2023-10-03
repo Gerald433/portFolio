@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import projets from "../../assets/data/projets.json";
 import styles from "./Projet.module.scss";
 import Item from "../../components/Item";
@@ -10,6 +10,7 @@ import hat2 from "../../assets/images/hat2.svg";
 
 function Projet() {
   const { projetId } = useParams();
+
   console.log("ID du projet:", projetId);
 
   const projetsFinis = projets.ProjetsFinis;
@@ -26,7 +27,7 @@ function Projet() {
   const projet = projetFinis || projetEnCours;
 
   if (!projet) {
-    return <div>Projet non trouvé</div>;
+    return <Navigate to="/404" />;
   }
 
   return (
