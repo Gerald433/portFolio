@@ -135,6 +135,8 @@
           transform: rotate(-45deg);
         }
       }
+      transition: none !important;
+    animation: none !important;
     }
   }
 }
@@ -149,7 +151,7 @@
 
 .menuVisible {
   display: none;
-
+  background-color: var(--white-12);
   @include mixin.xs {
     z-index: 2;
     height: 100vh;
@@ -168,6 +170,12 @@
     animation: slideDown 0.5s ease-in-out;
   }
 }
+.AAAA {
+  background-color: var(--white-12);
+  animation: slideDown 0.5s ease-in-out;
+  transform: translateY(-100%);
+}
+
 .menuOpen {
   background-color: var(--white-12);
   animation: slideDown 0.5s ease-in-out;
@@ -182,7 +190,8 @@
 }
 
 .menuClose {
-  animation: slideUp 0.5s ease-in-out;
+  background-color: var(--white-12);
+  animation: slideUp 0.5s ease-in-out forwards;
 }
 @keyframes slideUp {
   0% {

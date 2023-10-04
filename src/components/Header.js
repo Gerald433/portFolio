@@ -7,14 +7,23 @@ import { matchARoute } from "../routes";
 function Header() {
   const location = useLocation();
 
-  const [menuVisible, setMenuVisible] = useState(false);
+  // const [menuVisible, setMenuVisible] = useState(false);
+  const [menuVisible, setMenuVisible] = useState(null);
 
   function toggleMenu() {
     setMenuVisible(!menuVisible);
+    if (menuVisible === null) {
+      setMenuVisible(true);
+    } else setMenuVisible(!menuVisible);
   }
 
   function closeMenu() {
     setMenuVisible(false);
+  }
+
+  function getVisibility() {
+    if (menuVisible === null   ) return "";
+    return menuVisible ? styles.menuOpen : styles.menuClose;
   }
 
   if (!matchARoute(location.pathname)) return null;
@@ -92,6 +101,7 @@ function Header() {
           className={`${styles.menuVisible} ${
             menuVisible ? styles.menuOpen : styles.menuClose
           }`}
+          className={`${styles.AAAA} ${styles.menuVisible} ${getVisibility()}`}
           onTransitionEnd={closeMenu}
         ></div>
         <div className={`${menuVisible ? styles.menuVisible : "hidden"}`}>
