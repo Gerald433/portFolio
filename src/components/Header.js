@@ -9,7 +9,7 @@ function Header() {
 
   // const [menuVisible, setMenuVisible] = useState(false);
   const [menuVisible, setMenuVisible] = useState(null);
-  const [listMenuMobile, setListMenuMobile]= useState(null)
+  const [listMenuMobile, setListMenuMobile] = useState(null);
 
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
@@ -43,7 +43,7 @@ function Header() {
     return menuVisible ? styles.menuOpen : styles.menuClose;
   }
 
- function getVisibilityText() {
+  function getVisibilityText() {
     if (listMenuMobile === null) return "";
     return menuVisible ? styles.menuOpen : styles.menuClose;
   }
@@ -125,11 +125,9 @@ function Header() {
           // }`}
           className={`${styles.AAAA} ${styles.menuVisible} ${getVisibility()}`}
           onTransitionEnd={closeMenu}
-
-          
         ></div>
         <div className={`${menuVisible ? styles.menuVisible : "hidden"}`}>
-          <ul className={`${styles.listMenuMobile } d-flex flex-column`}>
+          <ul className={`${styles.listMenuMobile} d-flex flex-column`}>
             <li>
               <Link
                 className={
