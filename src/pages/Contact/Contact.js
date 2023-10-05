@@ -1,63 +1,7 @@
 import React from "react";
-import { useFormik } from "formik";
-import * as Yup from "yup"
 import styles from "./Contact.module.scss";
 import vector from "../../assets/images/Vector.svg";
-
-// function checkNameFirstName(){
-//   let errorMessageFirstName = document.getElementById("firstNameErrorMsg")
-//   let regexFirstName = /^[a-zàâäéèêëïîôöùûüÿç-]{1,15}$/i
-//   let resultControlFirstName = regexFirstName.test(nameFirstName.value)
-//   firstNameHasError = resultControlFirstName
-//   if (nameFirstName.value.length > 15) {
-//     errorMessageFirstName.textContent = "Votre prénom contient trop de caractères"
-
-//   } else if (nameFirstName.value.length < 1) {
-//     errorMessageFirstName.textContent = "Votre prénom n'est pas renseigné"
-
-//   } else if (resultControlFirstName === false) {
-//     errorMessageFirstName.textContent = "Ce champ n'accepte que les caractères alphabétiques dans la limite de 1 à 15"
-
-//   } else {
-//     errorMessageFirstName.textContent = ""
-
-//   }
-// }
-
-
-
-
-const validationSchema = Yup.object({
-  name: Yup.string()
-  .max(15, "Votre prénom ne peut pas dépasser 15 caractères")
-  .required("Votre prénom est requis"),
-  email: Yup.string()
-  .email("Adresse e-mail invalide")
-  .required("Votre e-mail est requis"),
-  subject: Yup.string().required("Le sujet est requis"),
-  message: Yup.string().required("Votre message est requis"),
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+import ContactForm from "./ContactForm";
 
 function Contact() {
   return (
@@ -81,7 +25,8 @@ function Contact() {
           <p className={`${styles.info}`}>
             J'y repondrai dans les meilleurs delais
           </p>
-          <form action="">
+          <ContactForm className={`${styles.formSection}`}/>
+          {/* <form action="">
             <div className={`${styles.formSection}`}>
               <label htmlFor="nameInput">Nom et prenom</label>
               <br />
@@ -114,7 +59,7 @@ function Contact() {
                 alt="icone d'envoi de message"
               />
             </button>
-          </form>
+          </form> */}
         </div>
       </div>
       <div className={`${styles.blackSpace} d-flex flex-fill `}></div>
