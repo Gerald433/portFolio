@@ -24,6 +24,41 @@ import vector from "../../assets/images/Vector.svg";
 //   }
 // }
 
+
+
+
+const validationSchema = Yup.object({
+  name: Yup.string()
+  .max(15, "Votre prénom ne peut pas dépasser 15 caractères")
+  .required("Votre prénom est requis"),
+  email: Yup.string()
+  .email("Adresse e-mail invalide")
+  .required("Votre e-mail est requis"),
+  subject: Yup.string().required("Le sujet est requis"),
+  message: Yup.string().required("Votre message est requis"),
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function Contact() {
   return (
     <div className={`${styles.major} d-flex flex-column`}>
