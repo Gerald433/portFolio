@@ -9,21 +9,43 @@ function Header() {
 
   // const [menuVisible, setMenuVisible] = useState(false);
   const [menuVisible, setMenuVisible] = useState(null);
+  const [listMenuMobile, setListMenuMobile] = useState(null);
+
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    function handleResize() {
+      setIsMobile(window.innerWidth <= 768);
+    }
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   function toggleMenu() {
-    setMenuVisible(!menuVisible);
     if (menuVisible === null) {
       setMenuVisible(true);
-    } else setMenuVisible(!menuVisible);
+    } else {
+      setMenuVisible(!menuVisible);
+    }
   }
 
   function closeMenu() {
-    setMenuVisible(false);
+    if (menuVisible !== null && !isMobile) {
+      setMenuVisible(false);
+    }
   }
 
   function getVisibility() {
-    if (menuVisible === null   ) return "";
+    if (menuVisible === null) return "";
     return menuVisible ? styles.menuOpen : styles.menuClose;
+  }
+
+  function getVisibilityText() {
+    if (listMenuMobile === null) return "";
+    return listMenuMobile ? styles.listMenuMobile : styles.listMenuMobileClose;
   }
 
   if (!matchARoute(location.pathname)) return null;
@@ -91,16 +113,16 @@ function Header() {
 
         <div
           className={`${styles.menuMobile} ${
-            menuVisible ? styles.clicked : ""
-          }`}
+            menuVisible === null ? styles.disableAnimation : ""
+          } ${menuVisible ? styles.clicked : ""}`}
           onClick={toggleMenu}
         >
           <span className={`${styles.bar}`}></span>
         </div>
         <div
-          className={`${styles.menuVisible} ${
-            menuVisible ? styles.menuOpen : styles.menuClose
-          }`}
+          // className={`${styles.menuVisible} ${
+          //   menuVisible ? styles.menuOpen : styles.menuClose
+          // }`}
           className={`${styles.AAAA} ${styles.menuVisible} ${getVisibility()}`}
           onTransitionEnd={closeMenu}
         ></div>

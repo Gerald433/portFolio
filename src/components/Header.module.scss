@@ -135,10 +135,14 @@
           transform: rotate(-45deg);
         }
       }
-      transition: none !important;
-    animation: none !important;
+      .disableAnimation{
+        transition: none !important;
+      animation: none !important;
+      }
     }
   }
+
+
 }
 .backgroundAnimation {
   position: fixed;
@@ -169,6 +173,10 @@
     font-size: 32px;
     animation: slideDown 0.5s ease-in-out;
   }
+  .listMenuMobileClose{
+    animation: slideUp 0.5s ease-in-out;
+  }
+  
 }
 .AAAA {
   background-color: var(--white-12);
@@ -183,6 +191,7 @@
 @keyframes slideDown {
   0% {
     transform: translateY(-100%);
+
   }
   100% {
     transform: translateY(0);
