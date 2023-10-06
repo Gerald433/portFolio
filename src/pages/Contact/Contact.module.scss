@@ -72,6 +72,7 @@ main {
         }
 
         .info {
+          margin-top: 20px;
           @include mixin.sm-lt {
             display: none;
           }
@@ -83,7 +84,6 @@ main {
           @include mixin.sm-lt {
             padding-top: 50px;
           }
-
         }
 
         form {
