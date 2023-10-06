@@ -110,18 +110,21 @@
 
   .error {
     color: var(--primary);
+    font-size: 16px;
   }
 }
 
-textArea{
+textArea {
   width: 100%;
-  border: 1px solid var(--white-0);
+  border: 1px solid var(--white-50);
+  border-radius: 5px;
   padding: 0;
   margin: 0;
   background: none;
   height: 100px;
   overflow-y: auto;
   resize: none;
+  color: var(--white-100);
 }
 
 button {
