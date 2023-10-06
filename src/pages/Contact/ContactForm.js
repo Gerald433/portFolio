@@ -1,7 +1,7 @@
 import React from "react";
 import { Formik, useFormik } from "formik";
 import * as Yup from "yup";
-import styles from "./Contact.module.scss";
+import styles from "./ContactForm.module.scss";
 import vector from "../../assets/images/Vector.svg";
 
 const validationSchema = Yup.object({
