@@ -31,7 +31,7 @@ function ContactForm() {
   });
 
   return (
-    <form onSubmit={formik.handleSubmit}>
+    <form onSubmit={formik.handleSubmit} action="envoyer-email" method="post">
       <div className={`${styles.formSection}`}>
         <label htmlFor="nameInput">Nom et prenom</label>
         <br />
