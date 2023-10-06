@@ -80,6 +80,10 @@ main {
         .formTitle {
           max-width: 336px;
           font-size: 36px;
+          @include mixin.sm-lt {
+            padding-top: 50px;
+          }
+
         }
 
         form {
