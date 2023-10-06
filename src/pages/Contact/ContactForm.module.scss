@@ -113,6 +113,17 @@
   }
 }
 
+textArea{
+  width: 100%;
+  border: 1px solid var(--white-0);
+  padding: 0;
+  margin: 0;
+  background: none;
+  height: 100px;
+  overflow-y: auto;
+  resize: none;
+}
+
 button {
   border-style: none;
   margin-top: 45px;
