@@ -60,7 +60,8 @@ main {
       .formGlobal {
         z-index: 0;
         min-width: 624px;
-        height: 853px;
+        min-height: 810px;
+        max-height: 920px;
         padding: 80px;
         flex-wrap: nowrap;
         background-color: var(--white-18);
