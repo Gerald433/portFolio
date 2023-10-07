@@ -1,11 +1,6 @@
 import styles from "./ProjetsList.module.scss";
 import React from "react";
-
 import ProjectBox from "../../components/projectBox";
-// import blackPhone from "../../assets/images/black-phone.svg";
-// import whitePhone from "../../assets/images/white-phone.svg";
-// import blackTablet from "../../assets/images/black-tablette.svg";
-// import whiteTablet from "../../assets/images/white-tablette.svg";
 import projetsComplet from "../../assets/data/projets.json";
 
 const ProjetsList = function () {
