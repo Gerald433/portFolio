@@ -25,13 +25,25 @@ function ContactForm() {
     },
     validationSchema: validationSchema,
     onSubmit: (values) => {
-      // Vous pouvez ajouter ici la logique d'envoi du formulaire avec les valeurs de "values"
+      const data = new FormData();
+      data.append("email", values.email);
+      data.append("message", values.message);
+      data.append("name", values.name);
+      data.append("subject", values.subject);
+      fetch("https://formspree.io/f/xleyovdq", {
+        method: "post",
+        body: data,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
       console.log(values);
     },
   });
 
   return (
-    <form onSubmit={formik.handleSubmit} action="envoyer-email" method="post">
+    <form onSubmit={formik.handleSubmit}>
       <div className={`${styles.formSection}`}>
         <label htmlFor="nameInput">Nom et prenom</label>
         <br />
