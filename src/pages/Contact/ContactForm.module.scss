@@ -102,6 +102,11 @@
 //             }
 //           }
 
+.successMessage {
+  color: var(--primary);
+  margin-top: 50px;
+}
+
 .formSection {
   padding-top: 50px;
   @include mixin.sm-lt {
