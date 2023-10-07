@@ -19,8 +19,10 @@ const ProjetsList = function () {
   return (
     <>
       <div className={`${styles.top} container d-flex flex-column `}>
-        
-        <h1 className={`${styles.titlePrincipal} `}>I'm <br />gerald g.</h1>
+        <h1 className={`${styles.titlePrincipal} `}>
+          I'm <br />
+          gerald g.
+        </h1>
         {console.log("salut")}
         <span className={`${styles.job} `}>Developpeur Web Front-end,</span>
         <span className={`${styles.specialisation} `}>JavaScript - React.</span>
@@ -31,10 +33,10 @@ const ProjetsList = function () {
       </div>
 
       <div
-        className={`${styles.presentationInFour} container d-flex justify-content-center align-items-center br`}
+        className={`${styles.presentationInFour} container d-flex justify-content-center align-items-center`}
       >
         {projetsOnDisplay.map((projet, index) => (
-          <ProjectBox 
+          <ProjectBox
             key={projet.id}
             projetId={projet.id}
             type={projet.type}
