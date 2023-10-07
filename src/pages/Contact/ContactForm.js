@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Formik, useFormik } from "formik";
 import * as Yup from "yup";
 import styles from "./ContactForm.module.scss";
@@ -15,6 +15,9 @@ const validationSchema = Yup.object({
   message: Yup.string().required("Votre message est requis"),
 });
 function ContactForm() {
+
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
   // Utilisation de useFormik pour gérer le formulaire
   const formik = useFormik({
     initialValues: {
@@ -36,6 +39,14 @@ function ContactForm() {
         headers: {
           Accept: "application/json",
         },
+      })
+      .then(() => {
+        // Mettre à jour l'état pour indiquer que le formulaire a été soumis avec succès.
+        setIsSubmitted(true);
+      })
+      .catch((error) => {
+        // Gérer les erreurs d'envoi du formulaire ici
+        console.error("Erreur lors de l'envoi du formulaire :", error);
       });
 
       console.log(values);
@@ -43,7 +54,14 @@ function ContactForm() {
   });
 
   return (
-    <form onSubmit={formik.handleSubmit}>
+<div>
+
+{isSubmitted ? (
+        <div className={`${styles.successMessage}`}>
+          Votre message a été envoyé avec succès!
+        </div>
+      ) : (
+        <form onSubmit={formik.handleSubmit}>
       <div className={`${styles.formSection}`}>
         <label htmlFor="nameInput">Nom et prenom</label>
         <br />
@@ -116,6 +134,10 @@ function ContactForm() {
         />
       </button>
     </form>
+      )}
+</div>
+    
+    
   );
 }
 
