@@ -7,6 +7,7 @@
 
 .formSection {
   padding-top: 50px;
+  
   @include mixin.sm-lt {
     font-size: 5px;
   }
@@ -20,6 +21,8 @@
 
 textArea {
   width: 100%;
+  font-size: 20px;
+  font-family: Acorn;
   border: 1px solid var(--white-50);
   border-radius: 5px;
   padding: 5px;

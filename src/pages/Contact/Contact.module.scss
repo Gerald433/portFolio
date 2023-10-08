@@ -23,6 +23,7 @@ main {
       .textZone {
         max-width: 552px;
         padding-top: 80px;
+
         @include mixin.sm-lt {
           padding-top: 0;
         }
@@ -102,6 +103,7 @@ main {
             border-bottom: 1px solid var(--white-50);
             background-color: var(--white-18);
             font-size: 22px;
+            font-family: Acorn;
             color: var(--white-100);
             @include mixin.sm-lt {
               font-size: 20px;
