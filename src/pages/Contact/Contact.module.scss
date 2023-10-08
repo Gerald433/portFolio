@@ -105,10 +105,18 @@ main {
             font-size: 22px;
             font-family: Acorn;
             color: var(--white-100);
+           
+            
             @include mixin.sm-lt {
               font-size: 20px;
             }
+
           }
+
+          input:focus {
+            outline: none;
+          }
+
 
           .formSection {
             padding-top: 50px;

@@ -33,6 +33,9 @@ textArea {
   resize: none;
   color: var(--white-100);
 }
+textArea:focus {
+  outline: none;
+}
 
 button {
   border-style: none;
