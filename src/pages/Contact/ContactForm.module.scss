@@ -1,7 +1,8 @@
 @use "../../assets/styles/mixins" as mixin;
 
 .successMessage {
-  color: var(--primary);
+  color: var(--white-100);
+  font-size: 20px;
   margin-top: 50px;
 }
 

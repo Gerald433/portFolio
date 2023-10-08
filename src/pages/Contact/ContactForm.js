@@ -58,7 +58,7 @@ function ContactForm() {
 
 {isSubmitted ? (
         <div className={`${styles.successMessage}`}>
-          Votre message a été envoyé avec succès!
+          Votre message a été envoyé avec succes!
         </div>
       ) : (
         <form onSubmit={formik.handleSubmit}>
