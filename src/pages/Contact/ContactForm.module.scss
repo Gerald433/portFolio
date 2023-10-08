@@ -32,6 +32,7 @@ textArea {
   overflow-y: auto;
   resize: none;
   color: var(--white-100);
+  cursor: pointer;
 }
 textArea:focus {
   outline: none;
