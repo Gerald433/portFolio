@@ -15,9 +15,9 @@ const validationSchema = Yup.object({
   subject: Yup.string().required("Le sujet est requis"),
   message: Yup.string().required("Votre message est requis"),
 });
-function ContactForm() {
-  const [isSubmitted, setIsSubmitted] = useState(false);
 
+function ContactForm({ setIsSubmitted, isSubmitted }) {
+  // const [isSubmitted, setIsSubmitted] = useState(false);
   // Utilisation de useFormik pour gérer le formulaire
   const formik = useFormik({
     initialValues: {
@@ -27,29 +27,56 @@ function ContactForm() {
       message: "",
     },
     validationSchema: validationSchema,
-    onSubmit: (values) => {
-      const data = new FormData();
-      data.append("email", values.email);
-      data.append("message", values.message);
-      data.append("name", values.name);
-      data.append("subject", values.subject);
-      fetch("https://formspree.io/f/xleyovdq", {
-        method: "post",
-        body: data,
-        headers: {
-          Accept: "application/json",
-        },
-      })
-        .then(() => {
-          // Mettre à jour l'état pour indiquer que le formulaire a été soumis avec succès.
-          setIsSubmitted(true);
-        })
-        .catch((error) => {
-          // Gérer les erreurs d'envoi du formulaire ici
-          console.error("Erreur lors de l'envoi du formulaire :", error);
-        });
 
-      console.log(values);
+    onSubmit: async (values) => {
+      try {
+        // Vous pouvez effectuer ici une requête AJAX pour envoyer le formulaire.
+        // Par exemple, utiliser fetch() pour envoyer les données au serveur.
+        // Remplacez cette partie par la logique d'envoi réelle de votre formulaire.
+
+        // Attendre la réponse (simulée) du serveur.
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+
+        // La soumission a réussi, afficher le message de confirmation.
+        setIsSubmitted(true);
+
+
+
+        console.log("Données du formulaire à envoyer : ", values);
+      } catch (error) {
+        // Gérer les erreurs d'envoi du formulaire ici.
+        console.error("Erreur lors de l'envoi du formulaire :", error);
+      }
+
+      //////////////////////////////////////////////////////////////////////////////////////////
+      ////////////////////////////////////////////////////////////////////////////////////////////
+      ////////////////////////////////////////////////////////////////////////////////////////
+      ///////////////////////////////////////////////////////////////////////////////////////////
+
+      // onSubmit: (values) => {
+
+      //    onSubmit();
+
+      // const data = new FormData();
+      // data.append("email", values.email);
+      // data.append("message", values.message);
+      // data.append("name", values.name);
+      // data.append("subject", values.subject);
+      // fetch("https://formspree.io/f/xleyovdq", {
+      //   method: "post",
+      //   body: data,
+      //   headers: {
+      //     Accept: "application/json",
+      //   },
+      // })
+      //   .then(() => {
+      //     // Mettre à jour l'état pour indiquer que le formulaire a été soumis avec succès.
+      //     setIsSubmitted(true);
+      //   })
+      //   .catch((error) => {
+      //     // Gérer les erreurs d'envoi du formulaire ici
+      //     console.error("Erreur lors de l'envoi du formulaire :", error);
+      //   });
     },
   });
   useEffect(() => {
@@ -80,22 +107,24 @@ function ContactForm() {
   }, []);
 
   return (
+    
     <div>
+      
       {isSubmitted ? (
-        <div className={`${styles.successMessage}`}>
-          <span >Votre message est envoye avec succes</span>
-          
-          <p>
-            Merci beaucoup pour votre message ! Je tiens à vous assurer que je
-            vais persoSupprimer les lignes inutilesnnellement prendre le temps de le lire attentivement et de
-            vous répondre dès que possible. Votre intérêt compte énormément pour
-            moi. À très bientôt !
-          </p>
+        // <div className={`${styles.successMessage}`}>
+        //   <span className={`${styles.validationText}`}>
+        //     Message bien reçu ! Je vous remercie pour votre communication.
+        //   </span>
+
+        //   <p className={`${styles.thanksText}`}>
+        //     Merci pour votre message ! Je prends le temps de le lire
+        //     attentivement et je vous réponds dès que possible. À bientôt !
+        //   </p>
 
           <Link to="/">
-            <button>Retour au formulaire</button>
+            <button>Retour</button>
           </Link>
-        </div>
+      
       ) : (
         <form onSubmit={formik.handleSubmit}>
           <div className={`${styles.formSection}`}>
@@ -173,6 +202,7 @@ function ContactForm() {
         </form>
       )}
     </div>
+    
   );
 }
 

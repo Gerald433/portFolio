@@ -81,6 +81,14 @@ main {
           }
         }
 
+        .info2 {
+          margin-top: 20px;
+          font-size: 20px;
+          @include mixin.sm-lt {
+            display: none;
+          }
+        }
+
         .formTitle {
           max-width: 336px;
           font-size: 36px;

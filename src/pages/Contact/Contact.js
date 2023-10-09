@@ -2,8 +2,11 @@ import React from "react";
 import styles from "./Contact.module.scss";
 import vector from "../../assets/images/Vector.svg";
 import ContactForm from "./ContactForm";
+import { useState } from "react";
 
 function Contact() {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
   return (
     <div className={`${styles.major} d-flex flex-column`}>
       <div
@@ -19,13 +22,33 @@ function Contact() {
         </div>
 
         <div className={`${styles.formGlobal} d-flex flex-column`}>
-          <h2 className={`${styles.formTitle}  d-flex `}>
-            Envoyez moi un message
+          {!isSubmitted ? (
+            <>
+              <h2 className={`${styles.formTitle} d-flex`}>
+                Envoyez moi un message
+              </h2>
+              <p className={`${styles.info}`}>
+                J'y répondrai dans les meilleurs délais
+              </p>
+            </>
+          ) : 
+          <>
+          <h2 className={`${styles.formTitle} d-flex`}>
+          Message bien reçu ! 
           </h2>
-          <p className={`${styles.info}`}>
-            J'y repondrai dans les meilleurs delais
+          <p className={`${styles.info2}`}>
+          Je vous remercie pour votre communication.
+          <br />
+          <br />
+          Merci pour votre message ! Je prends le temps de le lire
+            attentivement et je vous réponds dès que possible. À bientôt !
           </p>
-          <ContactForm className={`${styles.formSection}`}/>
+        </>}
+          <ContactForm
+            setIsSubmitted={setIsSubmitted}
+            isSubmitted={isSubmitted}
+            className={`${styles.formSection}`}
+          />
           {/* <form action="">
             <div className={`${styles.formSection}`}>
               <label htmlFor="nameInput">Nom et prenom</label>

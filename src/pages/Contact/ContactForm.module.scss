@@ -4,11 +4,20 @@
   color: var(--white-100);
   font-size: 20px;
   margin-top: 50px;
+
+  .validationText {
+    font-size: 30px;
+  }
+
+  .thanksText {
+    margin-top: 100px;
+    line-height: 168%;
+  }
 }
 
 .formSection {
   padding-top: 50px;
-  
+
   @include mixin.sm-lt {
     font-size: 5px;
   }
@@ -37,7 +46,6 @@ textArea {
   color: var(--white-100);
   cursor: pointer;
   border-bottom: 1px solid var(--white-50);
-
 }
 textArea:focus {
   outline: none;
