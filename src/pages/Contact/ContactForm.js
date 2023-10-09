@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Formik, useFormik } from "formik";
 import * as Yup from "yup";
 import styles from "./ContactForm.module.scss";
@@ -50,8 +50,48 @@ function ContactForm() {
       });
 
       console.log(values);
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
     },
   });
+  useEffect(() => {
+    // Ajustez la hauteur du textarea en fonction de son contenu lors du chargement initial de la page
+    const textareas = document.querySelectorAll("textarea");
+    textareas.forEach((textarea) => {
+      textarea.style.height = "auto";
+      textarea.style.height = textarea.scrollHeight + "px";
+    });
+
+    // Ajustez la hauteur du textarea à chaque modification du contenu
+    const adjustTextareaHeight = (event) => {
+      const textarea = event.target;
+      textarea.style.height = "auto";
+      textarea.style.height = textarea.scrollHeight + "px";
+    };
+
+    textareas.forEach((textarea) => {
+      textarea.addEventListener("input", adjustTextareaHeight);
+    });
+
+    // Nettoyez les écouteurs d'événements lors du démontage du composant
+    return () => {
+      textareas.forEach((textarea) => {
+        textarea.removeEventListener("input", adjustTextareaHeight);
+      });
+    };
+  }, []);
 
   return (
 <div>
