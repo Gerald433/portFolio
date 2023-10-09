@@ -3,6 +3,7 @@ import { Formik, useFormik } from "formik";
 import * as Yup from "yup";
 import styles from "./ContactForm.module.scss";
 import vector from "../../assets/images/Vector.svg";
+import { Link } from "react-router-dom";
 
 const validationSchema = Yup.object({
   name: Yup.string()
@@ -82,7 +83,18 @@ function ContactForm() {
     <div>
       {isSubmitted ? (
         <div className={`${styles.successMessage}`}>
-          Votre message a ete envoye avec succes!
+          <span >Votre message est envoye avec succes</span>
+          
+          <p>
+            Merci beaucoup pour votre message ! Je tiens à vous assurer que je
+            vais persoSupprimer les lignes inutilesnnellement prendre le temps de le lire attentivement et de
+            vous répondre dès que possible. Votre intérêt compte énormément pour
+            moi. À très bientôt !
+          </p>
+
+          <Link to="/">
+            <button>Retour au formulaire</button>
+          </Link>
         </div>
       ) : (
         <form onSubmit={formik.handleSubmit}>
@@ -137,6 +149,7 @@ function ContactForm() {
           <div className={`${styles.formSection}`}>
             <label htmlFor="message">Votre message ici</label>
             <br />
+
             <textarea
               id="message"
               name="message"
