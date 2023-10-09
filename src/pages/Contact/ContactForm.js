@@ -15,7 +15,6 @@ const validationSchema = Yup.object({
   message: Yup.string().required("Votre message est requis"),
 });
 function ContactForm() {
-
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   // Utilisation de useFormik pour gérer le formulaire
@@ -40,30 +39,16 @@ function ContactForm() {
           Accept: "application/json",
         },
       })
-      .then(() => {
-        // Mettre à jour l'état pour indiquer que le formulaire a été soumis avec succès.
-        setIsSubmitted(true);
-      })
-      .catch((error) => {
-        // Gérer les erreurs d'envoi du formulaire ici
-        console.error("Erreur lors de l'envoi du formulaire :", error);
-      });
+        .then(() => {
+          // Mettre à jour l'état pour indiquer que le formulaire a été soumis avec succès.
+          setIsSubmitted(true);
+        })
+        .catch((error) => {
+          // Gérer les erreurs d'envoi du formulaire ici
+          console.error("Erreur lors de l'envoi du formulaire :", error);
+        });
 
       console.log(values);
-
-
-      
-
-
-
-
-
-
-
-
-
-
-
     },
   });
   useEffect(() => {
@@ -94,90 +79,87 @@ function ContactForm() {
   }, []);
 
   return (
-<div>
-
-{isSubmitted ? (
+    <div>
+      {isSubmitted ? (
         <div className={`${styles.successMessage}`}>
-          Votre message a été envoyé avec succes!
+          Votre message a ete envoye avec succes!
         </div>
       ) : (
         <form onSubmit={formik.handleSubmit}>
-      <div className={`${styles.formSection}`}>
-        <label htmlFor="nameInput">Nom et prenom</label>
-        <br />
-        <input
-          type="text"
-          id="nameInput"
-          name="name"
-          value={formik.values.name}
-          onChange={formik.handleChange}
-          onBlur={formik.handleBlur}
-        />
-        {formik.touched.name && formik.errors.name ? (
-          <div className={`${styles.error}`}>{formik.errors.name}</div>
-        ) : null}
-      </div>
+          <div className={`${styles.formSection}`}>
+            <label htmlFor="nameInput">Nom et prenom</label>
+            <br />
+            <input
+              type="text"
+              id="nameInput"
+              name="name"
+              value={formik.values.name}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+            />
+            {formik.touched.name && formik.errors.name ? (
+              <div className={`${styles.error}`}>{formik.errors.name}</div>
+            ) : null}
+          </div>
 
-      <div className={`${styles.formSection}`}>
-        <label htmlFor="mail">Votre E-mail</label>
-        <br />
-        <input
-          type="text"
-          id="mail"
-          name="email"
-          value={formik.values.email}
-          onChange={formik.handleChange}
-          onBlur={formik.handleBlur}
-        />
-        {formik.touched.email && formik.errors.email ? (
-          <div className={`${styles.error}`}>{formik.errors.email}</div>
-        ) : null}
-      </div>
+          <div className={`${styles.formSection}`}>
+            <label htmlFor="mail">Votre E-mail</label>
+            <br />
+            <input
+              type="text"
+              id="mail"
+              name="email"
+              value={formik.values.email}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+            />
+            {formik.touched.email && formik.errors.email ? (
+              <div className={`${styles.error}`}>{formik.errors.email}</div>
+            ) : null}
+          </div>
 
-      <div className={`${styles.formSection}`}>
-        <label htmlFor="subject">Sujet de votre message</label>
-        <br />
-        <input
-          type="text"
-          id="subject"
-          name="subject"
-          value={formik.values.subject}
-          onChange={formik.handleChange}
-          onBlur={formik.handleBlur}
-        />
-        {formik.touched.subject && formik.errors.subject ? (
-          <div className={`${styles.error}`}>{formik.errors.subject}</div>
-        ) : null}
-      </div>
+          <div className={`${styles.formSection}`}>
+            <label htmlFor="subject">Sujet de votre message</label>
+            <br />
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              value={formik.values.subject}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+            />
+            {formik.touched.subject && formik.errors.subject ? (
+              <div className={`${styles.error}`}>{formik.errors.subject}</div>
+            ) : null}
+          </div>
 
-      <div className={`${styles.formSection}`}>
-        <label htmlFor="message">Votre message ici</label>
-        <br />
-        <textarea
-          id="message"
-          name="message"
-          value={formik.values.message}
-          onChange={formik.handleChange}
-          onBlur={formik.handleBlur}
-        />
-        {formik.touched.message && formik.errors.message ? (
-          <div className={`${styles.error}`}>{formik.errors.message}</div>
-        ) : null}
-      </div>
+          <div className={`${styles.formSection}`}>
+            <label htmlFor="message">Votre message ici</label>
+            <br />
+            <textarea
+              id="message"
+              name="message"
+              value={formik.values.message}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+            />
+            {formik.touched.message && formik.errors.message ? (
+              <div className={`${styles.error}`}>{formik.errors.message}</div>
+            ) : null}
+          </div>
 
-      <button type="submit">
-        Envoyer
-        <img
-          className={`${styles.vector}`}
-          src={vector}
-          alt="icone d'envoi de message"
-        />
-      </button>
-    </form>
+          <button type="submit">
+            Envoyer
+            <img
+              className={`${styles.vector}`}
+              src={vector}
+              alt="icone d'envoi de message"
+            />
+          </button>
+        </form>
       )}
-</div>
-    
-    
+    </div>
   );
 }
 
