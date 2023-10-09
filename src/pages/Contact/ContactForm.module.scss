@@ -36,6 +36,7 @@ textArea {
   resize: none;
   color: var(--white-100);
   cursor: pointer;
+  border-bottom: 1px solid var(--white-50);
 
 }
 textArea:focus {
