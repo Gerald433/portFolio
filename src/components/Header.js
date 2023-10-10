@@ -112,9 +112,7 @@ function Header() {
         </div>
 
         <div
-          className={`${styles.menuMobile} ${
-            menuVisible === null ? styles.disableAnimation : ""
-          } ${menuVisible ? styles.clicked : ""}`}
+          className={`${styles.menuMobile} ${menuVisible ? styles.clicked : ""}`}
           onClick={toggleMenu}
         >
           <span className={`${styles.bar}`}></span>

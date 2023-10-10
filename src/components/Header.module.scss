@@ -135,14 +135,8 @@
           transform: rotate(-45deg);
         }
       }
-      .disableAnimation{
-        transition: none !important;
-      animation: none !important;
-      }
     }
   }
-
-
 }
 .backgroundAnimation {
   position: fixed;
@@ -173,14 +167,13 @@
     font-size: 32px;
     animation: slideDown 0.5s ease-in-out;
   }
-  .listMenuMobileClose{
+  .listMenuMobileClose {
     animation: slideUp 0.5s ease-in-out;
   }
-  
 }
 .AAAA {
   background-color: var(--white-12);
-  animation: slideDown 0.5s ease-in-out;
+  // animation: slideDown 0.5s ease-in-out;
   transform: translateY(-100%);
 }
 
@@ -191,7 +184,6 @@
 @keyframes slideDown {
   0% {
     transform: translateY(-100%);
-
   }
   100% {
     transform: translateY(0);
@@ -200,7 +192,7 @@
 
 .menuClose {
   background-color: var(--white-12);
-  animation: slideUp 0.5s ease-in-out forwards;
+  // animation: slideUp 0.5s ease-in-out forwards;
 }
 // @keyframes slideUp {
 //   0% {
