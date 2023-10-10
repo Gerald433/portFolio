@@ -19,6 +19,14 @@ const validationSchema = Yup.object({
 function ContactForm({ setIsSubmitted, isSubmitted }) {
   // const [isSubmitted, setIsSubmitted] = useState(false);
   // Utilisation de useFormik pour gérer le formulaire
+
+  const [formValues, setFormValues] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -39,8 +47,6 @@ function ContactForm({ setIsSubmitted, isSubmitted }) {
 
         // La soumission a réussi, afficher le message de confirmation.
         setIsSubmitted(true);
-
-
 
         console.log("Données du formulaire à envoyer : ", values);
       } catch (error) {
@@ -79,6 +85,17 @@ function ContactForm({ setIsSubmitted, isSubmitted }) {
       //   });
     },
   });
+
+  // Fonction pour réinitialiser le formulaire
+  const resetForm = () => {
+    setFormValues({
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    });
+    setIsSubmitted(false); // Réinitialiser l'état isSubmitted à false
+  };
   useEffect(() => {
     // Ajustez la hauteur du textarea en fonction de son contenu lors du chargement initial de la page
     const textareas = document.querySelectorAll("textarea");
@@ -107,9 +124,7 @@ function ContactForm({ setIsSubmitted, isSubmitted }) {
   }, []);
 
   return (
-    
     <div>
-      
       {isSubmitted ? (
         // <div className={`${styles.successMessage}`}>
         //   <span className={`${styles.validationText}`}>
@@ -121,10 +136,9 @@ function ContactForm({ setIsSubmitted, isSubmitted }) {
         //     attentivement et je vous réponds dès que possible. À bientôt !
         //   </p>
 
-          <Link to="/contact">
-            <button>Retour</button>
-          </Link>
-      
+        <Link to="/contact">
+          <button onClick={resetForm}>Retour</button>
+        </Link>
       ) : (
         <form onSubmit={formik.handleSubmit}>
           <div className={`${styles.formSection}`}>
@@ -135,7 +149,10 @@ function ContactForm({ setIsSubmitted, isSubmitted }) {
               id="nameInput"
               name="name"
               value={formik.values.name}
-              onChange={formik.handleChange}
+              onChange={(e) => {
+                formik.handleChange(e);
+                setFormValues({ ...formValues, name: e.target.value });
+              }}
               onBlur={formik.handleBlur}
             />
             {formik.touched.name && formik.errors.name ? (
@@ -151,7 +168,10 @@ function ContactForm({ setIsSubmitted, isSubmitted }) {
               id="mail"
               name="email"
               value={formik.values.email}
-              onChange={formik.handleChange}
+              onChange={(e) => {
+                formik.handleChange(e);
+                setFormValues({ ...formValues, email: e.target.value });
+              }}
               onBlur={formik.handleBlur}
             />
             {formik.touched.email && formik.errors.email ? (
@@ -167,7 +187,10 @@ function ContactForm({ setIsSubmitted, isSubmitted }) {
               id="subject"
               name="subject"
               value={formik.values.subject}
-              onChange={formik.handleChange}
+              onChange={(e) => {
+                formik.handleChange(e);
+                setFormValues({ ...formValues, subject: e.target.value });
+              }}
               onBlur={formik.handleBlur}
             />
             {formik.touched.subject && formik.errors.subject ? (
@@ -183,7 +206,10 @@ function ContactForm({ setIsSubmitted, isSubmitted }) {
               id="message"
               name="message"
               value={formik.values.message}
-              onChange={formik.handleChange}
+              onChange={(e) => {
+                formik.handleChange(e);
+                setFormValues({ ...formValues, message: e.target.value });
+              }}
               onBlur={formik.handleBlur}
             />
             {formik.touched.message && formik.errors.message ? (
@@ -202,7 +228,6 @@ function ContactForm({ setIsSubmitted, isSubmitted }) {
         </form>
       )}
     </div>
-    
   );
 }
 
