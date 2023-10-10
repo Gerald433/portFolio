@@ -121,7 +121,7 @@ function ContactForm({ setIsSubmitted, isSubmitted }) {
         //     attentivement et je vous réponds dès que possible. À bientôt !
         //   </p>
 
-          <Link to="/">
+          <Link to="/contact">
             <button>Retour</button>
           </Link>
       
