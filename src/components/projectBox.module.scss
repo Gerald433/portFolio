@@ -14,9 +14,9 @@
     width: 100%;
   }
 
-  @include mixin.xs {
-    height: 503px;
-  }
+  // @include mixin.xs {
+  //   height: 503px;
+  // }
 
   .formation {
     padding-top: 50px;
@@ -36,9 +36,6 @@
   .phoneBlack {
     padding-top: 50px;
     object-fit: cover;
-    @include mixin.xs {
-      // padding-top: 50px;
-      width: 70%;
-    }
+    width: 70%;
   }
 }
