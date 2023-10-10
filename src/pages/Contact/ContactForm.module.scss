@@ -44,7 +44,7 @@ textArea {
   overflow-y: hidden;
   resize: none;
   color: var(--white-100);
-  cursor: pointer;
+
   border-bottom: 1px solid var(--white-50);
 }
 textArea:focus {
@@ -61,6 +61,7 @@ button {
   background-color: var(--primary);
   font-size: 20px;
   font-family: gt planar;
+  cursor: pointer;
 
   .vector {
     padding-left: 15px;
@@ -79,7 +80,7 @@ button {
   margin-top: -200px;
 }
 
-
-form, .formSection {
+form,
+.formSection {
   font-family: GT planar;
 }
