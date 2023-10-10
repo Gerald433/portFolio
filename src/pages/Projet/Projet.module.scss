@@ -32,6 +32,11 @@
 .itemList {
   margin-top: 50px;
   gap: 20px;
+  padding: 0px 20px 0 20px;
+  @include mixin.xs {
+     padding: 0;
+  }
+
 
   .itemChildren {
     color: var(--white-100);

@@ -33,7 +33,7 @@ function Header() {
   }
 
   function closeMenu() {
-    if (menuVisible !== null && !isMobile) {
+    if (menuVisible !== null ) {
       setMenuVisible(false);
     }
   }
