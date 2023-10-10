@@ -34,14 +34,16 @@ function Contact() {
           ) : 
           <>
           <h2 className={`${styles.formTitle} d-flex`}>
-          Message bien reçu ! 
+          Merci ! 
           </h2>
           <p className={`${styles.info2}`}>
-          Je vous remercie pour votre communication.
+          {/* Je vous remercie pour votre communication.
           <br />
-          <br />
-          Merci pour votre message ! Je prends le temps de le lire
-            attentivement et je vous réponds dès que possible. À bientôt !
+          <br /> */}
+          Je prends le temps de lire
+            attentivement votre message, et je vous réponds dès que possible.
+            <br />
+            À bientôt !
           </p>
         </>}
           <ContactForm
