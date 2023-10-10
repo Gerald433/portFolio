@@ -34,9 +34,8 @@
   gap: 20px;
   padding: 0px 20px 0 20px;
   @include mixin.xs {
-     padding: 0;
+    padding: 0;
   }
-
 
   .itemChildren {
     color: var(--white-100);
@@ -75,7 +74,8 @@
     }
     .techno {
       color: white;
-      padding-left: 20px;
+      padding-left: 0px;
+      margin-right: 20px;
       @include mixin.xs {
         padding-left: 0;
       }
@@ -107,6 +107,7 @@
     .techno {
       color: white;
       padding-left: 20px;
+
       @include mixin.xs {
         padding-left: 0;
       }
