@@ -37,5 +37,8 @@
     padding-top: 50px;
     object-fit: cover;
     width: 70%;
+    @include mixin.xs {
+      padding-top: 20px;
+    }
   }
 }
