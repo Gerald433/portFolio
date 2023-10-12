@@ -1,0 +1,37 @@
+<svg width="419" height="52" viewBox="0 0 419 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_iii_990_2)">
+<path d="M0 16C0 10.3995 0 7.59921 1.08993 5.46009C2.04867 3.57847 3.57847 2.04867 5.46009 1.08993C7.59921 0 10.3995 0 16 0H403C408.601 0 411.401 0 413.54 1.08993C415.422 2.04867 416.951 3.57847 417.91 5.46009C419 7.59921 419 10.3995 419 16V52H0V16Z" fill="#484848"/>
+</g>
+<g clip-path="url(#clip0_990_2)">
+<circle cx="26" cy="26" r="6" fill="#ED6A5E"/>
+<circle cx="26" cy="26" r="5.5" stroke="black" stroke-opacity="0.1"/>
+<circle cx="46" cy="26" r="6" fill="#F4BD50"/>
+<circle cx="46" cy="26" r="5.5" stroke="black" stroke-opacity="0.1"/>
+<circle cx="66" cy="26" r="6" fill="#61C454"/>
+<circle cx="66" cy="26" r="5.5" stroke="black" stroke-opacity="0.1"/>
+</g>
+<defs>
+<filter id="filter0_iii_990_2" x="0" y="0" width="419" height="52" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="-0.5"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.290196 0 0 0 0 0.290196 0 0 0 0 0.290196 0 0 0 1 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_990_2"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="0.5"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.290196 0 0 0 0 0.290196 0 0 0 0 0.290196 0 0 0 1 0"/>
+<feBlend mode="normal" in2="effect1_innerShadow_990_2" result="effect2_innerShadow_990_2"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="1"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.494118 0 0 0 0 0.494118 0 0 0 0 0.494118 0 0 0 1 0"/>
+<feBlend mode="normal" in2="effect2_innerShadow_990_2" result="effect3_innerShadow_990_2"/>
+</filter>
+<clipPath id="clip0_990_2">
+<rect width="52" height="12" fill="white" transform="translate(20 20)"/>
+</clipPath>
+</defs>
+</svg>
