@@ -344,10 +344,11 @@
     }
 
     .browseProjet {
-      max-width: 296px;
+      align-items: center;
+      justify-content: center;
+      width: 200px;
       text-decoration: none;
-      padding-left: 50px;
-      padding-right: 50px;
+
       border-style: none;
       flex-wrap: nowrap;
       // max-width: 259px;
@@ -485,8 +486,6 @@
     @include mixin.lg-lt {
       flex-direction: column;
       justify-content: center;
-
-    
     }
 
     @include mixin.sm-lt {

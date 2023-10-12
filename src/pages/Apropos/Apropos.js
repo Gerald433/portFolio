@@ -187,7 +187,7 @@ function Apropos() {
               d'apprentissage.
             </p>
             <Link className={`${styles.browseProjet} d-flex `} to="/">
-              <button>Parcourir mes projets</button>
+              <button>Mes projets</button>
             </Link>
           </div>
         </div>
