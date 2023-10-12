@@ -65,7 +65,7 @@
       "evaluation": "Le code des livrables est très clair, bien indenté et les blocs principaux sont clairement repérables sur les pages.\n\nL'utilisation des bonnes balises sémantiques est aussi un point fort à noter.\n\nAxes d'amélioration :\n\nUne utilisation de Sass serait très bien pour compléter la compréhension du langage de styles.\n\nRemarques :\n\nRAS. Expression orale irréprochable, tenue correcte.",
       "display": "yes",
       "position": "1",
-      "instrument": "/images/white-Phone.svg",
+      "instrument": "/images/white-phone.svg",
       "textAlt": "Telephone blanc"
     },
 
@@ -214,7 +214,7 @@
       "evaluation": "Tout fonctionne parfaitement suivant le cahier des charges et le code est très bien structuré. Le projet est très bien expliqué, les choix techniques sont clairement expliqués et le fonctionnement du site présenté en détails.",
       "display": "yes",
       "position": "4",
-      "instrument": "images/black-Phone.svg",
+      "instrument": "images/black-phone.svg",
       "textAlt": "Telephone noir"
     }
   ],
@@ -255,7 +255,7 @@
       "description": "L'entreprise souhaitait développer un site Internet permettant aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Ma mission consistait à réaliser l'intégration des maquettes pour les versions desktop, tablette et mobile.",
       "display": "yes",
       "position": "1",
-      "instrument": "images/white-Phone.svg",
+      "instrument": "images/white-phone.svg",
       "textAlt": "Telephone blanc"
     },
 
