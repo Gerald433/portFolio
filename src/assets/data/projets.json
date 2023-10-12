@@ -223,17 +223,22 @@
     {
       "id": "cv254nbh6",
       "type": "PERSONNEL",
-      "title": "Johnny's return",
+      "title": "Blog",
       "technologies": [
         {
           "logo": "/images/languages/logoHTML.svg",
           "nom": "HTML",
-          "percent": "50%"
+          "percent": "22.4%"
         },
         {
-          "logo": "/images/languages/logoCSS.svg",
-          "nom": "CSS",
-          "percent": "50%"
+          "logo": "/images/languages/logoSass.svg",
+          "nom": "SCSS",
+          "percent": "37.9%"
+        },
+        {
+          "logo": "/images/languages/logoJS.svg",
+          "nom": "JavaScript",
+          "percent": "39.7%"
         }
       ],
       "pictures": "images/projet.Img/Booki",
@@ -257,17 +262,22 @@
     {
       "id": "qq971lod7",
       "type": "PERSONNEL",
-      "title": "Blog",
+      "title": "Cook Chef",
       "technologies": [
         {
           "logo": "/images/languages/logoHTML.svg",
           "nom": "HTML",
-          "percent": "50%"
+          "percent": "21.7%"
         },
         {
-          "logo": "/images/languages/logoCSS.svg",
-          "nom": "CSS",
-          "percent": "50%"
+          "logo": "/images/languages/logoSass.svg",
+          "nom": "SCSS",
+          "percent": "32.2%"
+        },
+        {
+          "logo": "/images/languages/logoJS.svg",
+          "nom": "JavaScript",
+          "percent": "46.1%"
         }
       ],
       "pictures": "images/projet.Img/Booki",
