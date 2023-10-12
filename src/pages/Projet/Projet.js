@@ -99,21 +99,22 @@ function Projet() {
             />
           </div>
         </section>
+        {projetFinis && (
+          <section className={`d-flex flex-column `}>
+            <h2 className={`${styles.titleSection}`}>Section 2</h2>
 
-        <section className={`d-flex flex-column `}>
-          <h2 className={`${styles.titleSection}`}>Section 2</h2>
-
-          <div className={`${styles.boxEvaluation} `}>
-            <span className={`${styles.evaluator}`}>Evaluateur(trice)s</span>
-            <span className={`${styles.evaluatorJob}`}>
-              Développeur web FullStack
-            </span>
-            <span className={`${styles.evaluatorDate}`}>
-              le 10 Janvier 2022
-            </span>
-            <p className={`${styles.evaluation} `}>{projet.evaluation}</p>
-          </div>
-        </section>
+            <div className={`${styles.boxEvaluation} `}>
+              <span className={`${styles.evaluator}`}>Evaluateur(trice)s</span>
+              <span className={`${styles.evaluatorJob}`}>
+                Développeur web FullStack
+              </span>
+              <span className={`${styles.evaluatorDate}`}>
+                le 10 Janvier 2022
+              </span>
+              <p className={`${styles.evaluation} `}>{projet.evaluation}</p>
+            </div>
+          </section>
+        )}
       </div>
     </>
   );
