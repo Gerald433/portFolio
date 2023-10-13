@@ -241,7 +241,8 @@
           "percent": "39.7%"
         }
       ],
-      "pictures": "images/projet.Img/Booki",
+      "pictures1": "/images/projetImg/panthere/image58.jpg",
+      "pictures2": "/images/projetImg/blog/portFolioBlog.jpg",
       "specifications": [
         "Site Responsive",
         "Conforme à la maquette",
