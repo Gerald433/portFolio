@@ -51,40 +51,7 @@ function Contact() {
             isSubmitted={isSubmitted}
             className={`${styles.formSection}`}
           />
-          {/* <form action="">
-            <div className={`${styles.formSection}`}>
-              <label htmlFor="nameInput">Nom et prenom</label>
-              <br />
-              <input type="text" />
-            </div>
-
-            <div className={`${styles.formSection}`}>
-              <label htmlFor="mail">Votre E-mail</label>
-              <br />
-              <input type="text" />
-            </div>
-
-            <div className={`${styles.formSection}`}>
-              <label htmlFor="subject">Sujet de votre message</label>
-              <br />
-              <input type="text" />
-            </div>
-
-            <div className={`${styles.formSection}`}>
-              <label htmlFor="message">Votre message ici</label>
-              <br />
-              <input type="text" />
-            </div>
-
-            <button>
-              Envoyer
-              <img
-                className={`${styles.vector}`}
-                src={vector}
-                alt="icone d'envoi de message"
-              />
-            </button>
-          </form> */}
+          
         </div>
       </div>
       <div className={`${styles.blackSpace} d-flex flex-fill `}></div>
