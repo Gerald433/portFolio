@@ -30,6 +30,10 @@ function Projet() {
     return <Navigate to="/404" />;
   }
 
+  const redirectToExternalSite = () => {
+    window.location.href = projet.link;
+  };
+
   return (
     <>
       <div className={` container d-flex flex-column `}>
@@ -97,7 +101,10 @@ function Projet() {
               src={projet.pictures2}
               alt="projet 2"
             />
+             <button onClick={redirectToExternalSite} className="visit">Visiter</button>
           </div>
+      
+         
         </section>
         {projetFinis && (
           <section className={`d-flex flex-column `}>

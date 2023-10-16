@@ -4,6 +4,7 @@
       "id": "bo875trh9",
       "type": "FORMATION",
       "title": "Booki",
+      "link": "",
       "technologies": [
         {
           "logo": "/images/languages/logoHTML.svg",
@@ -36,6 +37,7 @@
       "id": "om432dohj8",
       "type": "FORMATION",
       "title": "ohmyfood",
+      "link": "https://gerald433.github.io/oh-my-food/",
       "technologies": [
         {
           "logo": "/images/languages/logoHTML.svg",
@@ -73,6 +75,7 @@
       "id": "ptr195wbdp1",
       "type": "FORMATION",
       "title": "La panthere",
+      "link": "",
       "technologies": [
         {
           "logo": "/images/languages/logoHTML.svg",
@@ -110,6 +113,7 @@
       "id": "knkp886dlcp2",
       "type": "FORMATION",
       "title": "Kanap",
+      "link": "",
       "technologies": [
         {
           "logo": "/images/languages/logoHTML.svg",
@@ -153,6 +157,7 @@
       "id": "ipkp696aiai3",
       "type": "FORMATION",
       "title": "Piiquante",
+      "link": "",
       "technologies": [
         {
           "logo": "/images/languages/logoHTML.svg",
@@ -179,6 +184,7 @@
       "id": "ssak114lgvx4",
       "type": "FORMATION",
       "title": "Kasa",
+      "link": "",
       "technologies": [
         {
           "logo": "/images/languages/logoHTML.svg",
@@ -224,6 +230,7 @@
       "id": "cv254nbh6",
       "type": "PERSONNEL",
       "title": "Blog",
+      "link": "",
       "technologies": [
         {
           "logo": "/images/languages/logoHTML.svg",
@@ -264,6 +271,7 @@
       "id": "qq971lod7",
       "type": "PERSONNEL",
       "title": "Cook Chef",
+      "link": "",
       "technologies": [
         {
           "logo": "/images/languages/logoHTML.svg",
