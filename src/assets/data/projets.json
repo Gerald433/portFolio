@@ -241,7 +241,7 @@
           "percent": "39.7%"
         }
       ],
-      "pictures1": "/images/projetImg/panthere/image58.jpg",
+      "pictures1": "/images/projetImg/blog/blog.jpg",
       "pictures2": "/images/projetImg/blog/portFolioBlog.jpg",
       "specifications": [
         "Site Responsive",
@@ -281,7 +281,8 @@
           "percent": "46.1%"
         }
       ],
-      "pictures": "images/projet.Img/Booki",
+      "pictures1": "/images/projetImg/cookChef/cook1.jpg",
+      "pictures2": "/images/projetImg/cookChef/cook2.jpg",
       "specifications": [
         "Site Responsive",
         "Conforme à la maquette",
