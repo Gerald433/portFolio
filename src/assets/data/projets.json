@@ -151,7 +151,7 @@
       ],
       "description": "Intégration dynamique des éléments d'une API dans différentes pages web avec JavaScript, gestion du panier",
       "evaluation": "Gérald  a fait un excellent travail! il a bien défendu son travail, il a manifesté une très bonne compréhension du code, et a su fournir des éléments de réponse pertinents face aux questions posées. Très bon travail, bon courage pour la suite de parcours",
-      "display": "yes",
+      "display": "no",
       "position": "3",
       "instrument": "/images/black-phone.svg",
       "textAlt": "Telephone noir"
@@ -222,7 +222,7 @@
       ],
       "description": "L'entreprise souhaitait une refonte totale de son site en JavaScript avec NodeJS côté back-end, et REACT côté front-end",
       "evaluation": "Tout fonctionne parfaitement suivant le cahier des charges et le code est très bien structuré. Le projet est très bien expliqué, les choix techniques sont clairement expliqués et le fonctionnement du site présenté en détails.",
-      "display": "no",
+      "display": "yes",
       "position": "4",
       "instrument": "images/black-phone.svg",
       "textAlt": "Telephone noir"
