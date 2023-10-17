@@ -101,10 +101,11 @@ function Projet() {
               src={projet.pictures2}
               alt="projet 2"
             />
-             <button onClick={redirectToExternalSite} className="visit">Visiter</button>
+
+            <button onClick={redirectToExternalSite} className="visit">
+              Visiter
+            </button>
           </div>
-      
-         
         </section>
         {projetFinis && (
           <section className={`d-flex flex-column `}>
