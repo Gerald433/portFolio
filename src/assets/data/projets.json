@@ -275,7 +275,7 @@
       "id": "qq971lod7",
       "type": "PERSONNEL",
       "title": "Cook Chef",
-      "link": "https://gerald433.github.io/cookchef/",
+      "link": "cookchef.vercel.app",
       "technologies": [
         {
           "logo": "/images/languages/logoHTML.svg",
