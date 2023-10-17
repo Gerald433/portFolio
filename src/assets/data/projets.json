@@ -17,7 +17,8 @@
           "percent": "48%"
         }
       ],
-      "pictures": "/images/projetImg/Booki.svg",
+      "pictures1": "/images/projetImg/ohMyFood/ohMyFood1.jpg",
+      "pictures2": "/images/projetImg/ohMyFood/ohMyFood2.jpg",
       "specifications": [
         "Site Responsive",
         "Conforme à la maquette",
@@ -30,7 +31,10 @@
       ],
       "description": "L'entreprise souhaitait développer un site Internet permettant aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Ma mission consistait à réaliser l'intégration des maquettes pour les versions desktop, tablette et mobile.",
       "evaluation": "Bonne présentation, l'étudiant a posé le contexte et a pris soin de présenter l'ensemble de son travail en expliquant les choix techniques, les difficultés rencontrées et le résultat final.\n\nL'étudiant a bien répondu aux questions posées.\n\nIl a juste fallu effectuer de légères corrections avant validation finale.\n\nProjet validé !",
-      "display": "no"
+      "display": "yes",
+      "position": "1",
+      "instrument": "/images/white-phone.svg",
+      "textAlt": "Telephone blanc"
     },
 
     {
@@ -66,9 +70,9 @@
       "description": "L'entreprise souhaitait développer un site “mobile first” qui répertorie les menus de restaurants gastronomiques. En plus des systèmes classiques de réservation, les clients pourront composer le menu de leur repas pour que les plats soient prêts à leur arrivée.",
       "evaluation": "Le code des livrables est très clair, bien indenté et les blocs principaux sont clairement repérables sur les pages.\n\nL'utilisation des bonnes balises sémantiques est aussi un point fort à noter.\n\nAxes d'amélioration :\n\nUne utilisation de Sass serait très bien pour compléter la compréhension du langage de styles.\n\nRemarques :\n\nRAS. Expression orale irréprochable, tenue correcte.",
       "display": "yes",
-      "position": "1",
-      "instrument": "/images/white-phone.svg",
-      "textAlt": "Telephone blanc"
+      "position": "2",
+      "instrument": "images/black-tablette.svg",
+      "textAlt": "Tablette noire"
     },
 
     {
@@ -104,9 +108,9 @@
       "description": "L'entreprise souhaitait des propositions d'axes d'améliorations du point de vue de l'accessibilité, du référencement et des performances, avec des comparatifs prouvant l'efficacité.",
       "evaluation": "Votre slider est très bien fait, il montre correctement les améliorations que vous avez mises en place et leur impact. Très bonne soutenance, vous avez su montrer que vous possédiez les compétences SEO pour ce genre de projet, continuez comme ça.",
       "display": "yes",
-      "position": "2",
-      "instrument": "images/black-tablette.svg",
-      "textAlt": "Tablette noire"
+      "position": "3",
+      "instrument": "images/white-tablette.svg",
+      "textAlt": "Tablette blanche"
     },
 
     {
@@ -149,8 +153,8 @@
       "evaluation": "Gérald  a fait un excellent travail! il a bien défendu son travail, il a manifesté une très bonne compréhension du code, et a su fournir des éléments de réponse pertinents face aux questions posées. Très bon travail, bon courage pour la suite de parcours",
       "display": "yes",
       "position": "3",
-      "instrument": "images/white-tablette.svg",
-      "textAlt": "Tablette blanche"
+      "instrument": "/images/black-phone.svg",
+      "textAlt": "Telephone noir"
     },
 
     {
@@ -218,7 +222,7 @@
       ],
       "description": "L'entreprise souhaitait une refonte totale de son site en JavaScript avec NodeJS côté back-end, et REACT côté front-end",
       "evaluation": "Tout fonctionne parfaitement suivant le cahier des charges et le code est très bien structuré. Le projet est très bien expliqué, les choix techniques sont clairement expliqués et le fonctionnement du site présenté en détails.",
-      "display": "yes",
+      "display": "no",
       "position": "4",
       "instrument": "images/black-phone.svg",
       "textAlt": "Telephone noir"
