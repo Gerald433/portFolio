@@ -275,7 +275,7 @@
       "id": "qq971lod7",
       "type": "PERSONNEL",
       "title": "Cook Chef",
-      "link": "cookchef.vercel.app",
+      "link": "https://cookchef.vercel.app",
       "technologies": [
         {
           "logo": "/images/languages/logoHTML.svg",
