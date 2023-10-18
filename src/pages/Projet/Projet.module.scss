@@ -76,6 +76,7 @@
       color: white;
       padding-left: 0px;
       margin-right: 20px;
+      padding-left: 10px;
       @include mixin.xs {
         padding-left: 0;
       }
@@ -106,7 +107,7 @@
     }
     .techno {
       color: white;
-      padding-left: 20px;
+      padding-left: 10px;
 
       @include mixin.xs {
         padding-left: 0;
@@ -114,10 +115,6 @@
     }
   }
 }
-
-
-
-
 
 .titleSection {
   margin-top: 150px;
@@ -155,10 +152,9 @@
   flex-direction: column;
 }
 
-.boxPicture2{
-  margin-bottom: 80px;  
+.boxPicture2 {
+  margin-bottom: 80px;
 }
-
 
 .description,
 .specificationList,
