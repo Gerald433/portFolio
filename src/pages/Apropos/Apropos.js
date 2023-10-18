@@ -18,7 +18,7 @@ import eglise from "../../assets/images/local/eglise.jpg";
 import blueLac from "../../assets/images/local/blueLac.jpg";
 import horizon from "../../assets/images/local/horizon.jpg";
 import logoReact from "../../assets/images/languages/logoREACT_.svg";
-import typeScriptLogo from "../../assets/images/languages/logoTypeScript.svg";
+import typeScriptLogo from "../../assets/images/languages/logTypeScript.svg";
 
 function Apropos() {
   return (
