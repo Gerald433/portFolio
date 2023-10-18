@@ -48,10 +48,11 @@
 
     .avatar {
       max-width: 100%;
+      border-radius: 110px 0 0 0 ;
 
       @include mixin.sm-lt {
         width: 100%;
-        border-radius: 20px;
+   
       }
     }
   }

@@ -1,6 +1,6 @@
 import styles from "./Apropos.module.scss";
 import { Link } from "react-router-dom";
-import avatar from "../../assets/images/Avatar.svg";
+import avatar from "../../assets/images/Avatar.jpg";
 import Item from "../../components/Item";
 import mongo from "../../assets/images/languages/mongo.svg";
 import node from "../../assets/images/languages/node.svg";
