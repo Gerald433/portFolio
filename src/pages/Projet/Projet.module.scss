@@ -33,6 +33,7 @@
   margin-top: 50px;
   gap: 40px;
   padding: 0px 20px 0 20px;
+  font-family: GT planar;
   @include mixin.xs {
     padding: 0;
   }
@@ -40,6 +41,8 @@
   .itemChildren {
     color: var(--white-100);
     justify-content: space-between;
+
+   
   }
   .logoItemBox {
     @include mixin.xs {

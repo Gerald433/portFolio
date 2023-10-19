@@ -90,7 +90,6 @@ function Projet() {
                 </li>
               ))}
             </ul>
-            )
           </div>
 
           <p className={`${styles.description} `}>{projet.description}</p>
