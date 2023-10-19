@@ -10,14 +10,11 @@
     margin-top: 150px;
     font-size: 157px;
 
-
-
     @include mixin.lg-lt {
       margin-top: 110px;
       font-size: 96px;
     }
     @include mixin.xs {
-  
       font-size: 48px;
     }
   }
@@ -26,14 +23,12 @@
     margin-top: 40px;
     @include mixin.lg-lt {
       margin-top: 20px;
-      
     }
   }
 
   .job,
   .specialisation {
     font-size: 48px;
-   
 
     @include mixin.lg-lt {
       font-size: 40px;
@@ -47,7 +42,6 @@
     font-family: Acorn extralight;
     @include mixin.sm-lt {
       font-size: 34px;
-    
     }
   }
 
@@ -60,7 +54,6 @@
     text-align: center;
     line-height: 158%;
     margin-top: 30px;
-   
 
     @include mixin.lg-lt {
       max-width: 500px;
@@ -81,7 +74,7 @@
   gap: 20px;
 
   @include mixin.md-lt {
-   gap: 0;
+    gap: 0;
   }
 
   .dark {
@@ -114,27 +107,32 @@
   .middleIndications {
     font-size: 28px;
     font-family: gt planar;
-    max-width: 718px;
+    max-width: 500px;
     color: var(--white-66);
     text-align: center;
 
     @include mixin.sm-lt {
-      font-size: 20px;
+      font-size: 24px;
+      padding-left: 20px;
+      padding-right: 20px;
     }
   }
 }
 
 .finalParagraph {
+  text-align: center;
   color: var(--white-66);
   line-height: 158%;
   font-family: gt planar;
   font-size: 36px;
-  max-width: 718px;
+  max-width: 500px;
   margin-top: 200px;
   margin-bottom: 300px;
   @include mixin.sm-lt {
     font-size: 24px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 100px;
+    margin-bottom: 150px;
   }
 }
