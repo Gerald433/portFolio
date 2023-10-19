@@ -54,9 +54,12 @@ function Header() {
     <header className={`${styles.header} `}>
       <div className={`${styles.container} container d-flex`}>
         <div className="d-flex flex-fill ">
+          <Link className="linkIcon" to="/">
           <span className={`${styles.icon} d-flex align-items-center`}>
             gg.
           </span>
+          </Link>
+          
           <nav className={`${styles.nav}`}>
             <ul className={`${styles.nav} d-flex align-items-center`}>
               <li>
