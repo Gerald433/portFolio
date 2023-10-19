@@ -5,6 +5,7 @@
       "type": "FORMATION",
       "title": "Booki",
       "link": "https://gerald433.github.io/booki/",
+      "disabled": "false",
       "technologies": [
         {
           "logo": "/images/languages/logoHTML.svg",
@@ -42,6 +43,7 @@
       "type": "FORMATION",
       "title": "ohmyfood",
       "link": "https://gerald433.github.io/oh-my-food/",
+      "disabled": "false",
       "technologies": [
         {
           "logo": "/images/languages/logoHTML.svg",
@@ -80,6 +82,7 @@
       "type": "FORMATION",
       "title": "La panthere",
       "link": "https://gerald433.github.io/Web-design-La-Panthere/",
+      "disabled": "false",
       "technologies": [
         {
           "logo": "/images/languages/logoHTML.svg",
@@ -118,6 +121,7 @@
       "type": "FORMATION",
       "title": "Kanap",
       "link": "",
+      "disabled": "false",
       "technologies": [
         {
           "logo": "/images/languages/logoHTML.svg",
@@ -162,6 +166,7 @@
       "type": "FORMATION",
       "title": "Piiquante",
       "link": "",
+      "disabled": "false",
       "technologies": [
         {
           "logo": "/images/languages/logoHTML.svg",
@@ -189,6 +194,7 @@
       "type": "FORMATION",
       "title": "Kasa",
       "link": "https://kasa-app-3n3f.vercel.app/",
+      "disabled": "false",
       "technologies": [
         {
           "logo": "/images/languages/logoHTML.svg",
@@ -235,6 +241,7 @@
       "type": "PERSONNEL",
       "title": "Blog",
       "link": "https://gerald433.github.io/blogProjet/",
+      "disabled": "true",
       "technologies": [
         {
           "logo": "/images/languages/logoHTML.svg",
@@ -276,6 +283,7 @@
       "type": "PERSONNEL",
       "title": "Cook Chef",
       "link": "https://cookchef.vercel.app",
+      "disabled": "false",
       "technologies": [
         {
           "logo": "/images/languages/logoHTML.svg",

@@ -25,12 +25,16 @@ function Projet() {
   console.log("Projet en cours trouvé:", projetEnCours);
 
   const projet = projetFinis || projetEnCours;
+  const isDisabled = projet.disabled === "true" ? true : false;
 
   if (!projet) {
     return <Navigate to="/404" />;
   }
 
   const redirectToExternalSite = () => {
+    if (isDisabled) {
+      return;
+    }
     window.location.href = projet.link;
   };
 
@@ -90,7 +94,6 @@ function Projet() {
                 </li>
               ))}
             </ul>
-            
           </div>
 
           <p className={`${styles.description} `}>{projet.description}</p>
@@ -102,7 +105,10 @@ function Projet() {
               alt="projet 2"
             />
 
-            <button onClick={redirectToExternalSite} className="visit">
+            <button
+              onClick={redirectToExternalSite}
+              className={isDisabled ? `${styles.disabledButton}` : "visit"}
+            >
               Visiter
             </button>
           </div>
