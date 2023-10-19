@@ -27,6 +27,8 @@
     }
     @include mixin.sm-lt {
       flex-direction: column;
+      // padding-left: 20px;
+      // padding-right: 20px;
     }
   }
   .blocPrincipal {
@@ -224,7 +226,7 @@
   .middleIndications {
     font-size: 22px;
     font-family: GT Planar;
-    max-width: 863px;
+    max-width: 700px;
     color: var(--white-66);
     text-align: center;
     line-height: 158%;
@@ -250,7 +252,7 @@
     padding: 50px;
   }
   @include mixin.sm-lt {
-    padding: 20px;
+    // padding: 20px;
     border-radius: 0;
   }
 
@@ -270,6 +272,7 @@
 
   .titleCompetence {
     font-size: 24px;
+    
   }
 
   .textCompetence,
@@ -391,7 +394,7 @@
 
 .transitionText {
   padding-top: 100px;
-  max-width: 706px;
+  max-width: 700px;
   font-family: GT Planar;
   font-size: 36px;
   margin: auto;
@@ -508,7 +511,7 @@
 }
 
 .conclusion {
-  max-width: 577px;
+  max-width: 700px;
   line-height: 158%;
   margin: auto;
   margin-top: 100px;
