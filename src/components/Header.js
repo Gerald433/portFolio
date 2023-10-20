@@ -16,6 +16,12 @@ function Header() {
   useEffect(() => {
     function handleResize() {
       setIsMobile(window.innerWidth <= 768);
+
+      const isMobileView = window.innerWidth <= 768;
+      setIsMobile(isMobileView);
+      if (!isMobileView) {
+        setMenuVisible(false);
+      }
     }
     window.addEventListener("resize", handleResize);
 
@@ -33,7 +39,7 @@ function Header() {
   }
 
   function closeMenu() {
-    if (menuVisible !== null ) {
+    if (menuVisible !== null) {
       setMenuVisible(false);
     }
   }
@@ -55,11 +61,11 @@ function Header() {
       <div className={`${styles.container} container d-flex`}>
         <div className="d-flex flex-fill ">
           <Link className="linkIcon" to="/">
-          <span className={`${styles.icon} d-flex align-items-center`}>
-            gg.
-          </span>
+            <span className={`${styles.icon} d-flex align-items-center`}>
+              gg.
+            </span>
           </Link>
-          
+
           <nav className={`${styles.nav}`}>
             <ul className={`${styles.nav} d-flex align-items-center`}>
               <li>
@@ -115,7 +121,9 @@ function Header() {
         </div>
 
         <div
-          className={`${styles.menuMobile} ${menuVisible ? styles.clicked : ""}`}
+          className={`${styles.menuMobile} ${
+            menuVisible ? styles.clicked : ""
+          }`}
           onClick={toggleMenu}
         >
           <span className={`${styles.bar}`}></span>
