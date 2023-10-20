@@ -107,7 +107,9 @@ function Projet() {
 
             <button
               onClick={redirectToExternalSite}
-              className={isDisabled ? `${styles.disabledButton}` : "visit"}
+              className={
+                isDisabled ? `${styles.disabledButton}` : `${styles.visit}`
+              }
             >
               Visiter
             </button>

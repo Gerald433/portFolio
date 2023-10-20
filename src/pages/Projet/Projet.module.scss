@@ -156,9 +156,16 @@
 .boxPicture2 {
   margin-bottom: 80px;
 
-  .disabledButton {
+  .visit {
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  .disabledButton{
     background-color: var(--white-77);
     color: var(--white-100);
+    margin: auto;
+    margin-top: 50px;
   }
 }
 
