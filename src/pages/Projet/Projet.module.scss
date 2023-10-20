@@ -177,6 +177,13 @@
   color: var(--white-100);
 }
 
+.specificationList{
+  @include mixin.lg-lt {
+    margin-top: 50px;
+  }
+  
+}
+
 .description {
   max-width: 513px;
   padding-top: 100px;
