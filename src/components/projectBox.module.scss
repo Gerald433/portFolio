@@ -23,6 +23,10 @@
     color: var(--white-66);
     font-family: GT planar;
     margin-bottom: 15px;
+
+    @include mixin.xs {
+      margin-bottom: 5px;
+    }
   }
 
   .title {
@@ -34,6 +38,10 @@
     color: var(--primary);
     padding-top: 20px;
     font-family: GT planar;
+    @include mixin.xs {
+      padding-top: 5px;
+    }
+
   }
 
   .phoneBlack {
