@@ -231,7 +231,7 @@
     font-family: GT Planar;
     max-width: 700px;
     color: var(--white-66);
-    text-align: center;
+    // text-align: center;
     line-height: 158%;
     margin-top: 20px;
 
@@ -257,6 +257,9 @@
   @include mixin.sm-lt {
     // padding: 20px;
     border-radius: 0;
+  }
+  @include mixin.xs {
+    padding: 20px;
   }
 
   .languagesOutils {
