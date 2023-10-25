@@ -23,7 +23,7 @@ const ProjetsList = function () {
         <span className={`${styles.specialisation} `}>JavaScript - React.</span>
         <p className={`${styles.indications} `}>
           Explorez ci-dessous quelques exemples de mes réalisations, illustrant
-          mon intéret pour le développement de solutions digitale pertinantes
+          mon intérêt pour le développement de solutions digitales pertinentes.
         </p>
       </div>
 
